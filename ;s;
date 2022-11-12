@@ -1,0 +1,2107 @@
+    local speaker = game.Players.LocalPlayer
+    if speaker.UserId == "2842627100" then
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me znobte not snobe")
+        while wait() do 
+            local A_1 = "اخلاط عمي اهههههههه"
+            local A_2 = "All"
+            local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+            Event:FireServer(A_1, A_2)
+            local tgggg = {
+                [1] = ";char me 00NLYZ0E "
+            }
+        
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(tgggg)) wait(1)
+            local Player = speaker
+        local Char = Player.Character
+        for i,v in pairs(Player.Backpack:GetDescendants()) do
+            if (v:IsA('Tool')) then
+                v.Parent = Player.Character
+            end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if (v:IsA('RemoteEvent')) then
+                v:FireServer('PlaySong', 7819696380)
+            end
+        end
+        
+        end
+    else
+        print("working")
+        local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/SICK-UI/main/SICK%20UI23r4t5e6rtdsdfe"))()
+    _G.dont = false
+    local UI = GUI:CreateWindow({
+        Name = "shrmuta hub",
+        LoadingTitle = "Loading Shrmuta hub..",
+        LoadingSubtitle = "by dream & mkrm",
+        ConfigurationSaving = {
+            Enabled = true,
+            FolderName = "shmuta hub folder", 
+            FileName = "shrmuta Hub"
+        },
+            Discord = {
+                Enabled = false,
+                Invite = "", 
+                RememberJoins = true 
+            },
+        KeySystem = true, 
+        KeySettings = {
+            Title = "shrmuta Hub",
+            Subtitle = "Key System",
+            Note = "the key is top",
+            FileName = "key system",
+            SaveKey = true,
+            GrabKeyFromSite = false, 
+            Key = "top"
+        }
+    })
+    _G.anticheat = true
+    stopDupe = true
+    UserInputService = game:GetService("UserInputService")
+    GUI:Notify({
+        Title = "قبل لا تبدا",
+        Content = "صلي على محمد",
+        Duration = 10,
+    })
+    wait(5)
+    GUI:Notify({
+        Title = "announcements",
+        Content = "most of the script's is not working we will fix that soon",
+        Duration = 10,
+    })
+    local home = UI:CreateTab("Home", 4483362458)
+    local fescripts = UI:CreateTab("Fe Scripts")
+    TweenService = game:GetService("TweenService")
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local radio = "\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132"
+    local version = "3.5.7"
+    _G.killv1 = false
+    _G.killv2 = false
+    print("version of the script is "..version)
+    function Dupe(amount)
+        local DropT = {}
+        speaker.Character.Humanoid:UnequipTools()
+        stopDupe = false
+        local Pos = speaker.Character.HumanoidRootPart.CFrame
+        speaker.Character:MoveTo(Vector3.new(0, 1e7, 0))
+        wait(.15)
+        speaker.Character.HumanoidRootPart.Anchored = true
+        for i = 1, amount do
+            if stopDupe then
+                break
+            end
+            wait(0.5)
+            speaker.Character:MoveTo(Vector3.new(0, 1e7, 0))
+            wait(.3)
+            for i, v in pairs(speaker.Backpack:GetChildren()) do
+                if v:IsA("Tool") and v.Name == radio then
+                    v.Parent = speaker.Character
+                    wait(.08)
+                    v.Parent = workspace
+                    table.insert(DropT, v)
+                end
+            end
+            wait(.3)
+            print("Respawning.!")
+            local args = {
+                [1] = ";respawn "
+            }
+
+            repeat 
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args)) wait()
+            print("repeating")
+            until speaker.CharacterAdded:wait()
+            if stopDupe then
+                break
+            end
+        end
+        wait(0.3)
+        speaker.Character.Humanoid:UnequipTools()
+        wait(0.3)
+        for i, v in pairs(Workspace:GetChildren("\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132")) do
+        if v:IsA("Tool") and v.Name == radio then
+            firetouchinterest(v.Handle, speaker.Character.RightHand, 0)
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+        end
+        end
+        grabtools()
+        wait(0.5)
+        ungrabtools()
+    wait(.3)
+    end    
+
+    function antibang()
+        _G.ay = true
+        local baseplate = Instance.new("Part")
+        baseplate.Parent = workspace
+        baseplate.Size = Vector3.new(30,1,30)
+        baseplate.Anchored = true
+        baseplate.Name = "Baseplate55"
+        baseplate.Position = Vector3.new(0, -507.5284729003906, 0)
+        killv2()  
+        wait(0.2)
+        while _G.ay == true do
+        local Pos = speaker.Character.HumanoidRootPart.CFrame
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(0, -504.5284729003906, 0)
+        wait(0.3)
+        speaker.Character.HumanoidRootPart.CFrame = Pos
+        wait(7)
+        end
+        
+    end
+
+    function unantibang()
+        _G.ay = false
+        wait(1)
+        for i,v in pairs(game:GetDescendants()) do
+            if v.Name == "Baseplate55" then v:Destroy() end
+        end
+    end
+
+    function removetools()
+        speaker.Backpack("رقصة 1").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+        speaker.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+        for i,v in pairs(speaker.Backpack:GetDescendants()) do
+            if v.Name ==  "قص" then
+                v:Destroy()
+            end
+        end 
+    end
+
+    function getRoot(char)
+        local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
+        return rootPart
+    end
+
+    function tools(plr)
+        if plr:FindFirstChildOfClass("Backpack"):FindFirstChildOfClass('Tool') or plr.Character:FindFirstChildOfClass('Tool') then
+            return true
+        end
+    end
+
+    function grabtools()
+        local Human = speaker.Character:FindFirstChildWhichIsA("Humanoid")
+        for _, v in ipairs(workspace:GetChildren()) do
+            if speaker.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+                Human:EquipTool(v)
+            end
+        end
+        if grabtoolsFunc then grabtoolsFunc:Disconnect() end
+        grabtoolsFunc = workspace.ChildAdded:Connect(function(v)
+            if speaker.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+                speaker.Character.Humanoid:EquipTools()
+            end
+        end)
+    end
+    function ungrabtools()
+        if grabtoolsFunc then grabtoolsFunc:Disconnect() end
+    end
+    spawn(function ()
+        function dropped()
+        if speaker.Character then
+            for _,obj in pairs(speaker.Character:GetChildren()) do
+                if obj:IsA("Tool") then
+                    obj.CanBeDropped = true
+                end
+            end
+        end
+        if speaker:FindFirstChildOfClass("Backpack") then
+            for _,obj in pairs(speaker:FindFirstChildOfClass("Backpack"):GetChildren()) do
+                if obj:IsA("Tool") then
+                    obj.CanBeDropped = true
+                end
+            end
+        end
+    end
+    end)
+
+    function antikill()
+        getgenv().AntiVoid = true -- // toggle it on and off
+
+    -- // Services
+    local Players = game:GetService("Players")
+
+    -- // Vars
+    local LocalPlayer = Players.LocalPlayer
+
+    -- // Check if anyone has the same handle as you
+    local function toolMatch(Handle)
+        local allPlayers = Players:GetPlayers()
+        for i = 1, #allPlayers do
+            -- // Vars
+            local Player = allPlayers[i]
+            if (Player == LocalPlayer) then continue end -- // ignore local player
+
+            -- // Vars
+            local Character = Player.Character
+            local RightArm = Character:WaitForChild("Right Arm")
+            local RightGrip = RightArm:FindFirstChild("RightGrip")
+
+            -- // Check if they share the same Part1 Handle of the Grip
+            if (RightGrip and RightGrip.Part1 == Handle) then
+                return Player
+            end
+        end
+    end
+
+    -- // Manager
+    local function onCharacter(Character)
+        local RightArm = Character:WaitForChild("Right Arm")
+
+        -- // See when you equip something
+        RightArm.ChildAdded:Connect(function(child)
+            if (child:IsA("Weld") and child.Name == "RightGrip" and getgenv().AntiVoid) then
+                -- // Vars
+                local ConnectedHandle = child.Part1
+
+                -- // Check if someone else has something equipped too with the same handle as you
+                local matched = toolMatch(ConnectedHandle)
+
+                -- // Destroy the tool, if someone is voiding you
+                if (matched) then
+                    ConnectedHandle.Parent:Destroy()
+                    print(matched, "just tried to void you lol!")
+                end
+            end
+        end)
+    end
+
+    -- // Initialise the script
+    onCharacter(LocalPlayer.Character)
+    LocalPlayer.CharacterAdded:Connect(onCharacter)
+    end
+
+    function unantikill()
+        getgenv().AntiVoid = false
+    end
+
+    spawn(function ()
+        function AK()
+        removetools()
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+        
+        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(-1.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0.03)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-2.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-4.6, -0.4, -0.2) * CFrame.Angles(1.6, math.rad(-98), 1.6)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-7, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(-9.6, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-12.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(-1.2, -3.1, -0.2) * CFrame.Angles(1.6, math.rad(-15), 1.6)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(-3.3, -2.7, -0.2) * CFrame.Angles(1.6, math.rad(-25), 1.6)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-0.1, 1.8, -0.1) * CFrame.Angles(1.6, math.rad(65), 1.6)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(1.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(3.15, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[13].Parent = plr.Character
+
+        Tools[14].Grip = CFrame.new(5.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+        Tools[14].Parent = plr.Character
+
+        Tools[15].Grip = CFrame.new(6.5, 4.1, -0.1) * CFrame.Angles(1.6, math.rad(110), 1.6)
+        Tools[15].Parent = plr.Character
+
+        Tools[16].Grip = CFrame.new(-14.3, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[16].Parent = plr.Character
+
+        Tools[17].Grip = CFrame.new(3.1, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[17].Parent = plr.Character
+
+        Tools[18].Grip = CFrame.new(5.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+        Tools[18].Parent = plr.Character
+
+        Tools[19].Grip = CFrame.new(0.25, 6.8, -0.05) * CFrame.Angles(1.6, math.rad(-0), 1.6)
+        Tools[19].Parent = plr.Character
+
+        Tools[20].Grip = CFrame.new(3.8, -4.4, -0.27) * CFrame.Angles(1.6, math.rad(-137), 1.6)
+        Tools[20].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function PICKAXE()
+        removetools()
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(-0.4, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(-2.7, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(-4.5, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-6.3, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-0.3, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(1.8, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(3.3, 5.4, 0.32) * CFrame.Angles(1.6, math.rad(-320), 1.6)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.42, 6.6, 0.32) * CFrame.Angles(1.6, math.rad(-220), 1.6)
+        Tools[8].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function RPG()
+        removetools()
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+        
+        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.7, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(2.5, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[3].Parent = plr.Character
+        
+        Tools[4].Grip = CFrame.new(4.3, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-6.5, -1.6, -0.2) * CFrame.Angles(1.6, math.rad(-250),1.6)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(6, -2.55, -0.2) * CFrame.Angles(1.6, math.rad(-115),1.6)
+        Tools[6].Parent = plr.Character
+        
+        Tools[7].Grip = CFrame.new(1.55, 7.2, 0.1) * CFrame.Angles(1.6, math.rad(-10),1.6)
+        Tools[7].Parent = plr.Character
+        
+        Tools[8].Grip = CFrame.new(-1.1, -1.2, -0.23) * CFrame.Angles(1.6, math.rad(-98),1.57)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(-2.8, -1.17, -0.17) * CFrame.Angles(1.6, math.rad(-99),1.6)
+        Tools[9].Parent = plr.Character
+        
+        Tools[10].Grip = CFrame.new(0, 2.7, -0.2) * CFrame.Angles(1.575, math.rad(-175),1.575)
+        Tools[10].Parent = plr.Character
+        
+        Tools[11].Grip = CFrame.new(-4.6, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+        Tools[11].Parent = plr.Character
+        
+        Tools[12].Grip = CFrame.new(-6.3, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(-1, 6, -0.45) * CFrame.Angles(1.6, math.rad(-205),1.4)
+        Tools[13].Parent = plr.Character
+        end
+    end)
+    spawn(function ()
+        function SWORD()
+        removetools()        
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(0, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.15, 1.7, -0.02) * CFrame.Angles(1.58, math.rad(90), 1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(3, -0.9, -0.05) * CFrame.Angles(1.58, math.rad(-45), 1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-3.1, -0.67, -0.049) * CFrame.Angles(1.58, math.rad(-135), 1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(2.2, -0.3, -0.03) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(4.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(6.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(8.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(10.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(12.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+        Tools[10].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function RAILGUNV1()
+        speaker.Backpack["رقصة 1"].Name = "قص"
+        speaker.Backpack["رقصة 2"].Name = "قص"
+        speaker.Backpack["رقصة 3"].Name = "قص"
+        speaker.Backpack["رقصة 4"].Name = "قص"
+        speaker.Backpack["رقصة 5"].Name = "قص"
+        speaker.Backpack["رقصة 6"].Name = "قص"
+        speaker.Backpack["رقصة 7"].Name = "قص"
+        speaker.Backpack["رقصة 8"].Name = "قص"
+        speaker.Backpack["رقصة 9"].Name = "قص"
+        speaker.Backpack["رقصة 01"].Name = "قص"
+        speaker.Backpack["رقصة 11"].Name = "قص"
+        speaker.Backpack["رقصة 21"].Name = "قص"
+        for i,v in pairs(speaker.Backpack:GetDescendants()) do
+            if v.Name ==  "قص" then
+                v:Destroy()
+            end
+        end
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[2].Parent = plr.Character
+
+        tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+        Tools[8].Parent = plr.Character
+        
+        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(-2.3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(3, 4.8, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[12].Parent = plr.Character
+        end
+    end)
+
+
+    spawn(function ()
+        function RAILGUNV2()
+            removetools()    
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren()
+        
+            Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[1].Parent = plr.Character
+
+            Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(0.6, -2.8, 0) * CFrame.Angles(-1.58, math.rad(-80), -1.58)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(-7.3, -2.3, 0) * CFrame.Angles(-1.58, math.rad(-45), -1.58)
+        Tools[11].Parent = plr.Character
+
+        Tools[12].Grip = CFrame.new(1.2, 3.95, -0.062) * CFrame.Angles(-1.58, math.rad(45), -1.58)
+        Tools[12].Parent = plr.Character
+
+        Tools[13].Grip = CFrame.new(4.3, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[13].Parent = plr.Character
+        
+        Tools[14].Grip = CFrame.new(-4.3, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[14].Parent = plr.Character
+
+        Tools[15].Grip = CFrame.new(6.6, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[15].Parent = plr.Character
+
+        Tools[16].Grip = CFrame.new(-6.6, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[16].Parent = plr.Character
+
+        Tools[17].Grip = CFrame.new(8.8, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+        Tools[17].Parent = plr.Character
+
+        Tools[18].Grip = CFrame.new(-8.8, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+        Tools[18].Parent = plr.Character
+
+        Tools[19].Grip = CFrame.new(11, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[19].Parent = plr.Character
+
+            Tools[20].Grip = CFrame.new(-11, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[20].Parent = plr.Character
+
+            Tools[21].Grip = CFrame.new(3.7, 4.2, -0.075) * CFrame.Angles(-1.58, math.rad(-250), -1.58)
+            Tools[21].Parent = plr.Character
+
+            Tools[22].Grip = CFrame.new(-0.8, -4.1, 0) * CFrame.Angles(-1.58, math.rad(250), -1.58)
+            Tools[22].Parent = plr.Character
+
+            Tools[23].Grip = CFrame.new(-0.7, -0.2, -0.2) * CFrame.Angles(1.57, math.rad(-270), 0)
+            Tools[23].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function pc()
+        removetools()        
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(0.8, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(-0.8, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(3, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(-3, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(5.2, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(-5.2, -0.6, 0) * CFrame.Angles(1.575, math.rad(0), 3.1)
+        Tools[6].Parent = plr.Character
+
+        Tools[7].Grip = CFrame.new(1.1, 2.5, -2.95) * CFrame.Angles(1.575, math.rad(180), 4.68)
+        Tools[7].Parent = plr.Character
+
+        Tools[8].Grip = CFrame.new(-2.2, -3, -2.17) * CFrame.Angles(3.13, math.rad(0), 3.1)
+        Tools[8].Parent = plr.Character
+
+        Tools[9].Grip = CFrame.new(-4, -3, -2.1699) * CFrame.Angles(3.13, math.rad(0), 3.1)
+        Tools[9].Parent = plr.Character
+
+        Tools[10].Grip = CFrame.new(2.2, 3.9, -2.26) * CFrame.Angles(3.13, math.rad(0), -0.04)
+        Tools[10].Parent = plr.Character
+
+        Tools[11].Grip = CFrame.new(4, 3.9, -2.26) * CFrame.Angles(3.13, math.rad(0), -0.04)
+        Tools[11].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function BOOMBOXARM()
+        removetools()        
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(0.6, -0.1, -0.4) * CFrame.Angles(1.58, math.rad(-90), 0)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(0.6, -0.1, -0.3625) * CFrame.Angles(1.58, math.rad(-90), 1.58)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(0.6, -0.1, -0.359) * CFrame.Angles(0, math.rad(-90), 1.58)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(0.6, -0.1, -0.4) * CFrame.Angles(0, math.rad(-90), -3.15)
+        Tools[4].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function PHONE()
+        removetools()        
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+        
+        Tools[1].Grip = CFrame.new(-1, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(2.5, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+        Tools[2].Parent = plr.Character
+
+        Tools[3].Grip = CFrame.new(-2.5, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+        Tools[3].Parent = plr.Character
+
+        Tools[4].Grip = CFrame.new(1, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+        Tools[4].Parent = plr.Character
+
+        Tools[5].Grip = CFrame.new(-4, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
+        Tools[5].Parent = plr.Character
+
+        Tools[6].Grip = CFrame.new(4, -0, 0) * CFrame.Angles(-0.2, math.rad(-180), -58.13)
+        Tools[6].Parent = plr.Character
+        end
+    end)
+
+    spawn(function ()
+        function killv1()
+        if _G.killv1 == false then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/klat3mk/remake/main/fe%20kill%20for%20any%20game'))()
+        _G.killv1 = true
+        end
+    end
+    end)
+
+
+    spawn(function ()
+        function killv2()
+            if _G.killv2 == false then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin%202.lua'))()
+            _G.killv2 = true
+            end
+        end
+    end)
+
+
+
+    spawn(function ()
+        function massplay(ID)
+        local Player = speaker
+        local Char = Player.Character
+        speaker.Character.Humanoid:UnequipTools()
+        wait()
+        for i,v in pairs(Player.Backpack:GetDescendants()) do
+        if (v:IsA('Tool')) and v.Name == radio then
+                v.Parent = Player.Character
+                end
+        end
+            for i,v in pairs(Char:GetDescendants()) do
+                if (v:IsA('RemoteEvent')) then
+                v:FireServer('PlaySong', ID)
+            end
+        end
+        end
+    end)   
+        
+    local function GetHandleTools(p)
+        p = p or Players.LocalPlayer
+    end
+
+
+    local Section = home:CreateSection("Welcome to my Hub " .. speaker.Name)
+
+    local Button = home:CreateButton({
+     Name = "Bypass Anticheat",
+    Callback = function()
+    if _G.anticheat == true then
+    GUI:Notify({
+     Title = "Wait..",
+    Content = "Bypassing Anticheat",
+    Duration = 5.2,
+    })
+    wait(0.5)
+    RunService:Set3dRenderingEnabled(true)
+    setfpscap(9)
+    wait(5)
+    RunService:Set3dRenderingEnabled(true)
+    setfpscap(360)
+    _G.anticheat = false
+    wait(1)
+    GUI:Notify({
+         Title = "bypassed",
+        Content = "the Anticheat is Disabled now :)",
+        Duration = 2,
+    })
+
+    elseif _G.anticheat == false then
+        GUI:Notify({
+             Title = "bro",
+            Content = "bro the Anticheat is already disblade...",
+            Duration = 5.2,
+        })
+    end
+    end
+    })
+    
+    local Input = home:CreateInput({
+         Name = "massplay",
+        PlaceholderText = "AUDIO ID",
+        RemoveTextAfterFocusLost = true,
+        Callback = function(ID)
+            GUI:Notify({
+                 Title = "ID",
+                Content = "Playing "..ID,
+                Duration = 5.2,
+            })
+        massplay(ID)
+        end,
+    })
+
+    local Input = home:CreateInput({
+        Name = "Dupe",
+       PlaceholderText = "do 5",
+       RemoveTextAfterFocusLost = true,
+       Callback = function(amount)
+        GUI:Notify({
+            Title = "Note",
+            Content = "Duping "..amount,
+            Duration = 5.2,
+        })
+        Dupe(amount)
+       end,
+   })
+
+    local Dropdown = home:CreateDropdown({
+        Name = "BOOMBOX Grip Pos",
+        Options = {"AK","pc"},
+        CurrentOption = "Option 1",
+        Flag = "grippos", 
+        Callback = function(slc)
+            if slc == "AK" then
+                AK()
+            elseif slc == "pc" then
+                pc()
+            end
+        end,
+    })
+
+    local LP =  UI:CreateTab("LocalPlayer")
+
+    -- Label
+
+    local Section = LP:CreateSection("aka localplayer")
+    -- Slider
+
+    local Slider = LP:CreateSlider({
+        Name = "walkspeed",
+        Range = {16, 500},
+        Increment = 16,
+        CurrentValue = 16,
+        Flag = "ws", 
+        Callback = function(value)
+            speaker.Character.Humanoid.WalkSpeed = value
+        end,
+    })
+
+    local Slider = LP:CreateSlider({
+        Name = "Jump Power",
+        Range = {50, 1000},
+        Increment = 50,
+        CurrentValue = 50,
+        Flag = "jp", 
+        Callback = function(value)
+            speaker.Character.Humanoid.JumpPower = value
+        end,
+    })
+
+
+    local flyjump
+    local Toggle = LP:CreateToggle({
+        Name = "flyjump",
+        CurrentValue = false,
+        Flag = "fj", 
+        Callback = function(infjump)
+            if infjump == true then
+                GUI:Notify({
+                     Title= "Toggle",
+                    Content = "Infjump is Active!",
+                    Duration = 5.2,
+                })
+            if flyjump then flyjump:Disconnect() end
+            flyjump = UserInputService.JumpRequest:Connect(function(Jump)
+                Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+            end)
+        else
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Infjump is Disblade..",
+                Duration = 5.2,
+            })
+            if flyjump then flyjump:Disconnect() end
+        end
+        end,
+    })
+
+
+    local Section = fescripts:CreateSection("most of the script's is not working we will fix that very soon")
+    local Section = fescripts:CreateSection("if you crashed just reset?, or rejoin in the misc tab")
+
+    local Button = fescripts:CreateButton({
+        Name = "if the script is not running thin press this",
+        Callback = function()
+            if _G.dont == true then
+                _G.dont = false
+                speaker.Character.Humanoid.Health = 0
+                wait(0.1)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Refresh me ")
+                wait(0.8)
+                GUI:Notify({
+                     Title= "Stats",
+                    Content = "Fixed!",
+                    Duration = 2,
+                })
+            elseif _G.dont == false then
+                GUI:Notify({
+                     Title= "Stats",
+                    Content = "no problem was found..",
+                    Duration = 5.2,
+                })
+            else
+                GUI:Notify({
+                     Title= "Stats",
+                    Content = "Faild Unknown Reasong..",
+                    Duration = 5.2,
+                })
+            end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Refresh low Chance of Crashing",
+        Callback = function()
+            speaker.Character.Humanoid.Health = 0
+            wait(0.2)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Refresh me ")
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "PP WITH CUM",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                    Title = "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 10,
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20pp%20with%20cum"))()
+        _G.dont = false
+        GUI:Notify({
+            Title = "Note",
+            Content = "press e to cum",
+            Duration = 5.2,
+        })
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "FE MOVING LOONG DICK",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                    Title = "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 10,
+                })
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")
+                wait(0.4)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me noob1")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3398308134")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3409612660")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3822880197")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4584029953")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3443038622")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3656493304")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3940375351")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3033908130")
+                wait(1.25)
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4154538250")
+            wait(1)
+            loadstring(game:HttpGet("https://pastebin.com/raw/wC69VCRp"))()
+            GUI:Notify({
+                Title = "Note",
+                Content = "press v to be horny",
+                Duration = 5,2,
+            })
+            _G.dont = false
+            else
+                GUI:Notify({
+                    Title = "Note",
+                    Content = "a script is already running",
+                    Duration = 2,
+                })
+            end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Sword Glitchier",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                    Title = "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 10,
+                })
+            for i,v in pairs(Workspace:GetDescendants()) do
+                if v.Name == "Swing Set" then v:Destroy()
+                end
+                end
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me noob1")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4524991457")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4315489767")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4458601937")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4506945409")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794315940")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4820152700")
+        wait(1)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SwordSimIsGood/Sword-SG/main/Swords%20FE%20Starmd'))()
+        _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+
+
+    local Button = fescripts:CreateButton({
+        Name = "FE WATER SWORD",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                    Title = "credits",
+                    Content = "that was Made by Khlat and Makram Dacca",
+                    Duration = 10,
+                })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")    
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me Zeckie")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 7100935371")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 9061348537")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 4886277931")
+        wait(2)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20water%20sword"))()
+        _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "FE BIG TITTY'S",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 10,
+                })
+            local r6 = {
+                [1] = ";morph me DonaldTrump "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(r6))
+    
+            wait()
+            wait(.57)
+            local clearcharappearance = {
+                [1] = ";morph me noob1 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(clearcharappearance))
+            wait(.57)
+            local hat1 = {
+                [1] = ";hat me 4708707860 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat1))
+            wait(.57)
+            local hat2 = {
+                [1] = ";hat me 5132802731 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat2))
+            wait(.57)
+            local hat3 = {
+                [1] = ";hat me 12548563 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat3))
+            wait(.57)
+            local hat4 = {
+                [1] = ";hat me 20011897 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat4))
+            wait(.57)
+        local TiddieSpread = 0.4
+        local TiddieAngle = 10
+        local TiddieDensity = 0
+        local TiddieFriction = 0.4
+        local TiddieElasticity = 1
+        local TiddieFrictionWeight = 0
+        local TiddieElasticityWeight = 0
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/BIG%20TITTY'S"))()
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "small titty's",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 10,
+                })
+            
+        local args = {
+            [1] = ";morph me DonaldTrump "
+        }
+    
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+        wait()
+        local args1 = {
+            [1] = ";morph me Noob1 "
+        }
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+        wait(0.4)
+        local Pos = speaker.Character.HumanoidRootPart.CFrame
+        local baseplate = Instance.new("Part")
+        baseplate.Parent = workspace
+        baseplate.Size = Vector3.new(10,2,10)
+        baseplate.Anchored = true
+        baseplate.Name = "Baseplate553"
+        baseplate.Material = "Neon"
+        baseplate.LocalTransparencyModifier = "0.8"
+        baseplate.CFrame = CFrame.new(186.28096, 233.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(1)
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.5)
+        print("p")
+            print("e")
+        local args3 = {
+            [1] = ";hat me 5674299814 "
+        }
+    
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+        wait(0.5)
+        local args4 = {
+            [1] = ";hat me 5674297809 "
+        }
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+    
+        wait(0.3)
+        speaker.Character["MeshPartAccessory"].Name = "Bob1"
+        speaker.Character["MeshPartAccessory"].Name = "Bob2"
+        wait()
+        for i,v in pairs(speaker.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+                v:Destroy()
+            end
+        end
+        wait(0.2)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+    
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+    
+        Tools[1].Grip = CFrame.new(-0.900, 0.300, 0.700) * CFrame.Angles(0, math.rad(170),0, 180, 0)
+        Tools[1].Parent = plr.Character
+    
+        Tools[2].Grip = CFrame.new(-2.000, 0.300, 1.300) * CFrame.Angles(0, math.rad(-170),0, 180, 0)
+        Tools[2].Parent = plr.Character
+    
+            local args = {
+            [1] = ";unFreeze "
+        }
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+            for i,v in pairs(game:GetDescendants()) do
+                if v.Name ==  "Baseplate553" then
+                    v:Destroy()
+                end
+            end
+        wait(0.5)
+        speaker.Character.HumanoidRootPart.CFrame = Pos
+    
+    
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+
+
+
+    fescripts:addButton("FUCK THAT GAY FLAG",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+    local args = {
+        [1] = ";morph me DonaldTrump "
+    }
+
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+    wait(0.5)
+    local args1 = {
+        [1] = ";morph me Noob1 "
+    }
+    speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+    wait()
+    local args2 = {
+        [1] = ";freeze "
+    }
+
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
+    wait(0.5)
+    local args3 = {
+        [1] = ";hat me 5132235291 "
+    }
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+
+    wait(0.5)
+    local args4 = {
+        [1] = ";hat me 191101707 "
+    }
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+                v.Parent = game:GetService("Players").LocalPlayer.Character
+            end		
+        end
+        wait()
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Tool") then
+                v:Destroy()
+            end
+        end
+
+        wait(0.5)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+        
+        wait(0.5)
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+    
+        Tools[1].Grip = CFrame.new(0.600, -1.500, -.000) * CFrame.Angles(0, math.rad(0),0.6, 0, 0)
+        Tools[1].Parent = plr.Character
+        
+        Tools[2].Grip = CFrame.new(-0.999, -1.999, -.000) * CFrame.Angles(0.1, math.rad(0),0, 0, 0)
+        Tools[2].Parent = plr.Character
+        
+    local args = {
+        [1] = ";unFreeze "
+    }
+    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+
+        wait(0.2)
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+    fescripts:addButton("BIG DICK",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+            local args = {
+            [1] = ";morph me DonaldTrump "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+        wait()
+        local args1 = {
+            [1] = ";morph me Noob1 "
+        }
+        
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+        wait()
+        local args2 = {
+            [1] = ";freeze "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
+        wait(1.5)
+        local args3 = {
+            [1] = ";hat me 4602617115 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+        wait(1.5)
+        local args4 = {
+            [1] = ";hat me 4602619613 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+        wait(1.5)
+        local args5 = {
+            [1] = ";hat me 4602623152 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args5))
+        wait(1.5)
+        local args6 = {
+            [1] = ";hat me 5858536049 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args6))
+        wait(1.5)
+        local args7 = {
+            [1] = ";hat me 4623675984 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args7))
+        wait(1.5)
+        local args8 = {
+            [1] = ";hat me 4602533885 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args8))
+        wait(1.5)
+        local args9 = {
+            [1] = ";hat me 4753437569 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args9))
+        wait(1.5)
+        local args10 = {
+            [1] = ";hat me 4611970333 "
+        }
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args10))
+        
+        wait(0.2)
+        speaker.Character["MeshPartAccessory"].Name = "Bob1"
+        speaker.Character["MeshPartAccessory"].Name = "Bob2"
+        speaker.Character["MeshPartAccessory"].Name = "Bob3"
+        speaker.Character["MeshPartAccessory"].Name = "Bob4"
+        speaker.Character["MeshPartAccessory"].Name = "Bob5"
+        speaker.Character["MeshPartAccessory"].Name = "Bob6"
+        speaker.Character["MeshPartAccessory"].Name = "Bob7"
+        speaker.Character["MeshPartAccessory"].Name = "Bob8"
+        
+        wait(0.3)
+        for i, v in pairs(speaker.Character:GetChildren()) do
+            if v:IsA("Accessory") then
+                if v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                    if v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                        v.Handle:FindFirstChildOfClass("SpecialMesh"):Remove()
+                    end
+                end
+            end
+        end
+        
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+                v.Parent = game:GetService("Players").LocalPlayer.Character
+            end		
+        end
+        wait()
+        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Tool") then
+                v:Destroy()
+            end
+        end
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+        wait(0.6)
+        local plr1 = game:GetService("Players").LocalPlayer; plr1.Character.Humanoid:UnequipTools()
+        
+        local Tools1 = plr1.Backpack:GetChildren()
+
+        Tools1[1].Grip = CFrame.new(0.121, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[1].Parent = plr1.Character
+
+        Tools1[2].Grip = CFrame.new(-5.831, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[2].Parent = plr1.Character
+
+        Tools1[3].Grip = CFrame.new(-11.787, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[3].Parent = plr1.Character
+
+        Tools1[4].Grip = CFrame.new(-17.729, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[4].Parent = plr1.Character
+
+        Tools1[5].Grip = CFrame.new(-23.667, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[5].Parent = plr1.Character
+
+        Tools1[6].Grip = CFrame.new(-29.588, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[6].Parent = plr1.Character
+
+        Tools1[7].Grip = CFrame.new(0.121, 1.006, 7.295) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[7].Parent = plr1.Character
+
+        Tools1[8].Grip = CFrame.new(0.121, 1.006, -4.429) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+        Tools1[8].Parent = plr1.Character
+
+        local args = {
+        [1] = ";unFreeze "
+        }
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+    loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("small dick",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        local args = {
+            [1] = ";morph me DonaldTrump "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+        wait()
+        local args1 = {
+            [1] = ";morph me Noob1 "
+        }
+        
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+        wait()
+        local args2 = {
+            [1] = ";freeze "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
+        wait()
+        local args3 = {
+            [1] = ";hat me 4794106130 "
+        }
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+                v.Parent = game:GetService("Players").LocalPlayer.Character
+            end		
+        end
+        wait()
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Tool") then
+                v:Destroy()
+            end
+        end
+
+        wait(0.2)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+        
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+    
+        Tools[1].Grip = CFrame.new(-1.121, 1.506, -1.174) * CFrame.Angles(4.7, math.rad(-90),0, 1 -1)
+        Tools[1].Parent = plr.Character
+        
+            
+            local args = {
+            [1] = ";unFreeze "
+        }
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+
+    fescripts:addButton("small ass",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        local args = {
+            [1] = ";morph me DonaldTrump "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+        wait(0.4)
+        local args1 = {
+            [1] = ";morph me Noob1 "
+        }
+        
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+        wait()
+        local args2 = {
+            [1] = ";freeze "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
+        wait(0.4)
+        local args3 = {
+            [1] = ";hat me 10911958 "
+        }
+
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+        wait(0.4)
+        local args4 = {
+            [1] = ";hat me 11142504 "
+        }
+        
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+
+    wait(0.4)
+    speaker.Character["Memorial Day 2009 Army Helmet"].Name = "Bob1" 
+    speaker.Character["Racing Helmet"].Name = "Bob2"
+
+    --سكربت blockhats
+        wait(0.4)
+        for i, v in pairs(speaker.Character:GetChildren()) do
+            if v:IsA("Accessory") then
+                if v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                    if v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                        v.Handle:FindFirstChildOfClass("SpecialMesh"):Remove()
+                    end
+                end
+            end
+        end
+        
+            --Tool
+                wait(0.4)
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+            if v:IsA("Tool") then
+                v.Parent = game:GetService("Players").LocalPlayer.Character
+            end		
+        end
+        wait()
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Tool") then
+                v:Destroy()
+            end
+        end
+
+        wait(0.4)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+
+        wait(0.4)
+        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+        local Tools = plr.Backpack:GetChildren()
+
+        Tools[1].Grip = CFrame.new(2.150, 1.900, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
+        Tools[1].Parent = plr.Character
+
+        Tools[2].Grip = CFrame.new(2.150, 1.100, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
+        Tools[2].Parent = plr.Character
+
+            local args = {
+            [1] = ";unFreeze "
+        }
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+    -- Netless ReAnimation
+    -- Created by MiAiHsIs1226
+        wait(0.5)
+        _G.dont = false
+        wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("FE MINIGUN",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6775268462")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 9063843256")
+        wait(1)
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/mini%20gun"))()
+
+        GUI:Notify({
+            Title = "Note",
+            Content = "press e to equip & press q to unequip",
+            Duration = 5.2,
+        })
+    _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("Fe Sniper",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7604332496")
+        wait()
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        wait(1.5)
+        
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/FE%20SNIPER23432"))()
+    _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("GAINT MAN WITH A GUN",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376526888")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5555280833")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794106130")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6902333316")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 18015906")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744219293")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744235800")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1743941933")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4585144193")
+        wait(0.7)
+    
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20gaint%20man%20with%20gun334565432q1345678432345643w2q"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("FE SKATEBOARD",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5063577434")
+        wait(1)
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20skateboard"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("FE 2 GUNS",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8262955749")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7168000945")
+        wait(1)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%202%20gun's"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("FE PC",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678216978")
+        wait(0.3)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678225898")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6531974818")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6060224214")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5971691715")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5205483683")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 2309346267")
+        wait(1)
+        
+        loadstring(game:HttpGet("https://pastebin.com/raw/ChgDJkpE"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+    fescripts:addButton("FE HANDS",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+        wait(1)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4855525473")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8337370")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474313")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62724852")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 20372960")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376524487")
+        wait(2)
+
+        loadstring(game:HttpGet("https://pastebin.com/raw/mvJvEQr7"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+
+    fescripts:addButton("FE SEX DOLL ",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        wait(0.4)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+        wait(1)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4904137145")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4246228452")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4911305457")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4822592866")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3992084515")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 14815761")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+        wait(1.25)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+        wait(2)
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/klat3mk/m/main/r"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+    fescripts:addButton("FE TANK",function()
+        if _G.dont == false then
+            _G.dont = true
+            GUI:Notify({
+                 Title= "credits",
+                Content = "that was Made by Khlat and Makram Dacca ",
+                Duration = 10,
+            })
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+        wait(0.7)
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4735116238")
+        wait(0.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/2QcSrY1M"))()
+        _G.dont = false
+    else
+        GUI:Notify({
+            Title = "Note",
+            Content = "a script is already running",
+            Duration = 2,
+        })
+    end
+    end)
+
+    local misc = UI:CreateTab("Misc")
+
+    -- [ misc ] --
+
+    local Section = misc:CreateSection("misc")
+
+    misc:addTextBox("Dupe","do 5",function(amount)
+        GUI:Notify({
+            Title = "Note",
+            Content = "Duping "..amount,
+            Duration = 5.2,
+        })
+        Dupe(amount)
+    end)
+
+    misc:addToggle("antibang",function(value)
+        if value == true then 
+            GUI:Notify({
+                Title = "Note",
+                Content = "AntiBnag is Active!",
+                Duration = 5.2,
+            })
+            antibang()
+        else 
+            GUI:Notify({
+                Title = "Note",
+                Content = "AntiBang Disabled..",
+                Duration = 5.2,
+            })
+            unantibang()
+        end
+    end)
+
+    misc:addToggle("grabtools!",function(value)
+        if value == true then 
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Grabtools is Active",
+                Duration = 5.2,
+            })
+            grabtools()
+        else 
+            GUI:Notify({
+                 Title= "Toggle",
+                Content = "Grabtools is Disabled",
+                Duration = 5.2,
+            })
+            ungrabtools()
+        end
+    end)
+
+    GUI:Notify({
+        Title = "قبل لا تبدا",
+        Content = "صلي على محمد",
+    })
+    wait(5)
+    GUI:Notify({
+        Title = "announcements",
+        Content = "most of the script's is not working we will fix that soon",
+    })
+
+
+    misc:addButton("rejoin game",function()
+        GUI:Notify({
+            Title = "Note",
+            Content = "Rejoinning..",
+            Duration = 5.2,
+        })
+        wait(0.2)
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    end)
+
+    local credits = UI:addPage("credits",1,false,9)
+
+    credits:addLabel("this hub was made by khlat and makram dacca ", "klat on top!")
+
+    credits:addLabel("social media for khlat :", "khlat#0089 on discord")
+
+    credits:addLabel("social media for khlat :", "dream0_77777777777 on roblox")
+
+    credits:addLabel("social media for makram :", "DARK16#7037 on discord")
+
+    credits:addLabel("social media for makram :", "mkrm dacca on yt")
+
+    credits:addLabel("social media for makram :", "makram12345 on roblox")
+    while wait() do
+        if speaker.CharacterAdded:wait() then
+    speaker.Backpack:FindFirstChild("رقصة 1").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+    for i,v in pairs(speaker.Backpack:GetDescendants()) do
+        if v.Name ==  "قص" then
+            v:Destroy()
+        end
+    end 
+end
+end
+
+while true do 
+    for i,v in pairs(game:GetDescendants()) do
+        if v.Name == "Baseplate553" then
+    v.Color = Color3.new(255/255,0/255,0/255)
+    for i = 0,255,10 do
+    wait()
+    v.Color = Color3.new(255/255,i/255,0/255)
+    end
+    for i = 255,0,-10 do
+    wait()
+    v.Color = Color3.new(i/255,255/255,0/255)
+    end
+    for i = 0,255,10 do
+    wait()
+    v.Color = Color3.new(0/255,255/255,i/255)
+    end
+    for i = 255,0,-10 do
+    wait()
+    v.Color = Color3.new(0/255,i/255,255/255)
+    end
+    for i = 0,255,10 do
+    wait()
+    v.Color = Color3.new(i/255,0/255,255/255)
+    end
+    for i = 255,0,-10 do
+    wait()
+    v.Color = Color3.new(255/255,0/255,i/255)
+    end
+    end
+    end
+end
+end
+Rayfield:LoadConfiguration()
