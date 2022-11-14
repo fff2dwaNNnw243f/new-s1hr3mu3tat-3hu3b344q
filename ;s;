@@ -60,13 +60,13 @@
     GUI:Notify({
         Title = "قبل لا تبدا",
         Content = "صلي على محمد",
-        Duration = 10,
+        Duration = 6.2,
     })
     wait(5)
     GUI:Notify({
         Title = "announcements",
         Content = "most of the script's is not working we will fix that soon",
-        Duration = 10,
+        Duration = 6.2,
     })
     local home = UI:CreateTab("Home", 4483362458)
     local fescripts = UI:CreateTab("Fe Scripts")
@@ -75,6 +75,14 @@
     local RunService = game:GetService("RunService")
     local radio = "\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132"
     local version = "3.5.7"
+    local baseplate = Instance.new("Part")
+    baseplate.Parent = workspace
+    baseplate.Size = Vector3.new(100,2,100)
+    baseplate.Anchored = true
+    baseplate.Name = "Baseplate553"
+    baseplate.Material = "Neon"
+    baseplate.LocalTransparencyModifier = "0.8"
+    baseplate.CFrame = CFrame.new(186.28096, 233.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
     _G.killv1 = false
     _G.killv2 = false
     print("version of the script is "..version)
@@ -924,9 +932,16 @@
                 GUI:Notify({
                     Title = "credits",
                     Content = "that was Made by Khlat and Makram Dacca ",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
+                local Pos = speaker.Character.HumanoidRootPart.CFrame
+                speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                speaker.Character.Humanoid.WalkSpeed = 0
+                wait()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20pp%20with%20cum"))()
+                wait()
+                speaker.Character.HumanoidRootPart.CFrame = Pos
+                speaker.Character.Humanoid.WalkSpeed = 20
         _G.dont = false
         GUI:Notify({
             Title = "Note",
@@ -951,11 +966,14 @@
                 GUI:Notify({
                     Title = "credits",
                     Content = "that was Made by Khlat and Makram Dacca ",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")
                 wait(0.4)
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me noob1")
+                local Pos = speaker.Character.HumanoidRootPart.CFrame
+                speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+                speaker.Character.Humanoid.WalkSpeed = 0
                 wait(1.25)
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3398308134")
                 wait(1.25)
@@ -972,6 +990,8 @@
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3940375351")
                 wait(1.25)
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3033908130")
+                speaker.Character.HumanoidRootPart.CFrame = Pos
+                speaker.Character.Humanoid.WalkSpeed = 20
                 wait(1.25)
                 game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4154538250")
             wait(1)
@@ -1000,15 +1020,14 @@
                 GUI:Notify({
                     Title = "credits",
                     Content = "that was Made by Khlat and Makram Dacca ",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
-            for i,v in pairs(Workspace:GetDescendants()) do
-                if v.Name == "Swing Set" then v:Destroy()
-                end
-                end
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")
             wait(1.25)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me noob1")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
             wait(1.25)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4524991457")
             wait(1.25)
@@ -1021,6 +1040,8 @@
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794315940")
             wait(1.25)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4820152700")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
         wait(1)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/SwordSimIsGood/Sword-SG/main/Swords%20FE%20Starmd'))()
         _G.dont = false
@@ -1044,17 +1065,22 @@
                 GUI:Notify({
                     Title = "credits",
                     Content = "that was Made by Khlat and Makram Dacca",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")    
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me Zeckie")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump")    
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me Zeckie")
             wait(0.5)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 7100935371")
             wait(0.5)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 9061348537")
             wait(0.5)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Hat me 4886277931")
-        wait(2)
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+        wait(.7)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20water%20sword"))()
         _G.dont = false
         else
@@ -1073,9 +1099,9 @@
             if _G.dont == false then
                 _G.dont = true
                 GUI:Notify({
-                     Title= "credits",
+                    Title = "credits",
                     Content = "that was Made by Khlat and Makram Dacca ",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
             local r6 = {
                 [1] = ";morph me DonaldTrump "
@@ -1090,6 +1116,9 @@
             }
             
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(clearcharappearance))
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
             wait(.57)
             local hat1 = {
                 [1] = ";hat me 4708707860 "
@@ -1115,18 +1144,13 @@
             
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(hat4))
             wait(.57)
-        local TiddieSpread = 0.4
-        local TiddieAngle = 10
-        local TiddieDensity = 0
-        local TiddieFriction = 0.4
-        local TiddieElasticity = 1
-        local TiddieFrictionWeight = 0
-        local TiddieElasticityWeight = 0
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/BIG%20TITTY'S"))()
-        wait(0.5)
-        _G.dont = false
-        wait(.5)
-        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/BIG%20TITTY'S"))()
+            wait(0.5)
+            _G.dont = false
+            wait(.5)
+            loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
         else
             GUI:Notify({
                 Title = "Note",
@@ -1145,7 +1169,7 @@
                 GUI:Notify({
                      Title= "credits",
                     Content = "that was Made by Khlat and Makram Dacca ",
-                    Duration = 10,
+                    Duration = 6.2,
                 })
             
         local args = {
@@ -1160,19 +1184,9 @@
         game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
         wait(0.4)
         local Pos = speaker.Character.HumanoidRootPart.CFrame
-        local baseplate = Instance.new("Part")
-        baseplate.Parent = workspace
-        baseplate.Size = Vector3.new(10,2,10)
-        baseplate.Anchored = true
-        baseplate.Name = "Baseplate553"
-        baseplate.Material = "Neon"
-        baseplate.LocalTransparencyModifier = "0.8"
-        baseplate.CFrame = CFrame.new(186.28096, 233.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        wait(1)
         speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        speaker.Character.Humanoid.WalkSpeed = 0
         wait(0.5)
-        print("p")
-            print("e")
         local args3 = {
             [1] = ";hat me 5674299814 "
         }
@@ -1204,20 +1218,8 @@
     
         Tools[2].Grip = CFrame.new(-2.000, 0.300, 1.300) * CFrame.Angles(0, math.rad(-170),0, 180, 0)
         Tools[2].Parent = plr.Character
-    
-            local args = {
-            [1] = ";unFreeze "
-        }
-            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-            for i,v in pairs(game:GetDescendants()) do
-                if v.Name ==  "Baseplate553" then
-                    v:Destroy()
-                end
-            end
-        wait(0.5)
         speaker.Character.HumanoidRootPart.CFrame = Pos
-    
-    
+        speaker.Character.Humanoid.WalkSpeed = 20
         wait(0.5)
         _G.dont = false
         wait(.5)
@@ -1233,370 +1235,337 @@
     })
 
 
-
-
-    fescripts:addButton("FUCK THAT GAY FLAG",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-    local args = {
-        [1] = ";morph me DonaldTrump "
-    }
-
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-    wait(0.5)
-    local args1 = {
-        [1] = ";morph me Noob1 "
-    }
-    speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
-    wait()
-    local args2 = {
-        [1] = ";freeze "
-    }
-
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
-    wait(0.5)
-    local args3 = {
-        [1] = ";hat me 5132235291 "
-    }
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
-
-    wait(0.5)
-    local args4 = {
-        [1] = ";hat me 191101707 "
-    }
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
-
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-            if v:IsA("Tool") then
-                v.Parent = game:GetService("Players").LocalPlayer.Character
-            end		
-        end
-        wait()
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-            if v:IsA("Tool") then
-                v:Destroy()
-            end
-        end
-
-        wait(0.5)
-        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
-        
-        wait(0.5)
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
-    
-        Tools[1].Grip = CFrame.new(0.600, -1.500, -.000) * CFrame.Angles(0, math.rad(0),0.6, 0, 0)
-        Tools[1].Parent = plr.Character
-        
-        Tools[2].Grip = CFrame.new(-0.999, -1.999, -.000) * CFrame.Angles(0.1, math.rad(0),0, 0, 0)
-        Tools[2].Parent = plr.Character
-        
-    local args = {
-        [1] = ";unFreeze "
-    }
-    game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-
-        wait(0.2)
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-        wait(0.5)
-        _G.dont = false
-        wait(.5)
-        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-    fescripts:addButton("BIG DICK",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-            local args = {
+    local Button = fescripts:CreateButton({
+        Name = "Fuck That Flag",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+        local args = {
             [1] = ";morph me DonaldTrump "
         }
-        
+    
         game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-        wait()
+        wait(0.5)
         local args1 = {
             [1] = ";morph me Noob1 "
         }
-        
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
+    
         game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+        local Pos = speaker.Character.HumanoidRootPart.CFrame
+        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        speaker.Character.Humanoid.WalkSpeed = 0
         wait()
-        local args2 = {
-            [1] = ";freeze "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
-        wait(1.5)
+        wait(0.5)
         local args3 = {
-            [1] = ";hat me 4602617115 "
+            [1] = ";hat me 5132235291 "
         }
-
         game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
-        wait(1.5)
+    
+        wait(0.5)
         local args4 = {
-            [1] = ";hat me 4602619613 "
+            [1] = ";hat me 191101707 "
         }
-
         game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
-        wait(1.5)
-        local args5 = {
-            [1] = ";hat me 4602623152 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args5))
-        wait(1.5)
-        local args6 = {
-            [1] = ";hat me 5858536049 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args6))
-        wait(1.5)
-        local args7 = {
-            [1] = ";hat me 4623675984 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args7))
-        wait(1.5)
-        local args8 = {
-            [1] = ";hat me 4602533885 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args8))
-        wait(1.5)
-        local args9 = {
-            [1] = ";hat me 4753437569 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args9))
-        wait(1.5)
-        local args10 = {
-            [1] = ";hat me 4611970333 "
-        }
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args10))
-        
-        wait(0.2)
-        speaker.Character["MeshPartAccessory"].Name = "Bob1"
-        speaker.Character["MeshPartAccessory"].Name = "Bob2"
-        speaker.Character["MeshPartAccessory"].Name = "Bob3"
-        speaker.Character["MeshPartAccessory"].Name = "Bob4"
-        speaker.Character["MeshPartAccessory"].Name = "Bob5"
-        speaker.Character["MeshPartAccessory"].Name = "Bob6"
-        speaker.Character["MeshPartAccessory"].Name = "Bob7"
-        speaker.Character["MeshPartAccessory"].Name = "Bob8"
-        
-        wait(0.3)
-        for i, v in pairs(speaker.Character:GetChildren()) do
-            if v:IsA("Accessory") then
-                if v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh") then
-                    if v.Handle:FindFirstChildOfClass("SpecialMesh") then
-                        v.Handle:FindFirstChildOfClass("SpecialMesh"):Remove()
-                    end
+    
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+                if v:IsA("Tool") then
+                    v.Parent = game:GetService("Players").LocalPlayer.Character
+                end		
+            end
+            wait()
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v:IsA("Tool") then
+                    v:Destroy()
                 end
             end
-        end
-        
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-            if v:IsA("Tool") then
-                v.Parent = game:GetService("Players").LocalPlayer.Character
-            end		
-        end
-        wait()
-        for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-            if v:IsA("Tool") then
-                v:Destroy()
-            end
-        end
-        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
-        wait(0.6)
-        local plr1 = game:GetService("Players").LocalPlayer; plr1.Character.Humanoid:UnequipTools()
-        
-        local Tools1 = plr1.Backpack:GetChildren()
-
-        Tools1[1].Grip = CFrame.new(0.121, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[1].Parent = plr1.Character
-
-        Tools1[2].Grip = CFrame.new(-5.831, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[2].Parent = plr1.Character
-
-        Tools1[3].Grip = CFrame.new(-11.787, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[3].Parent = plr1.Character
-
-        Tools1[4].Grip = CFrame.new(-17.729, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[4].Parent = plr1.Character
-
-        Tools1[5].Grip = CFrame.new(-23.667, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[5].Parent = plr1.Character
-
-        Tools1[6].Grip = CFrame.new(-29.588, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[6].Parent = plr1.Character
-
-        Tools1[7].Grip = CFrame.new(0.121, 1.006, 7.295) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[7].Parent = plr1.Character
-
-        Tools1[8].Grip = CFrame.new(0.121, 1.006, -4.429) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
-        Tools1[8].Parent = plr1.Character
-
-        local args = {
-        [1] = ";unFreeze "
-        }
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        wait(0.5)
-        _G.dont = false
-        wait(.5)
-    loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("small dick",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-        local args = {
-            [1] = ";morph me DonaldTrump "
-        }
-        
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-        wait()
-        local args1 = {
-            [1] = ";morph me Noob1 "
-        }
-        
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
-        wait()
-        local args2 = {
-            [1] = ";freeze "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
-        wait()
-        local args3 = {
-            [1] = ";hat me 4794106130 "
-        }
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
-
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-            if v:IsA("Tool") then
-                v.Parent = game:GetService("Players").LocalPlayer.Character
-            end		
-        end
-        wait()
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-            if v:IsA("Tool") then
-                v:Destroy()
-            end
-        end
-
-        wait(0.2)
-        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
-        
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
     
-        Tools[1].Grip = CFrame.new(-1.121, 1.506, -1.174) * CFrame.Angles(4.7, math.rad(-90),0, 1 -1)
-        Tools[1].Parent = plr.Character
-        
+            wait(0.5)
+            loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
             
-            local args = {
-            [1] = ";unFreeze "
-        }
-            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        wait(0.5)
-        _G.dont = false
-        wait(.5)
-        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-
-    fescripts:addButton("small ass",function()
-        if _G.dont == false then
-            _G.dont = true
+            wait(0.5)
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren()
+        
+            Tools[1].Grip = CFrame.new(0.600, -1.500, -.000) * CFrame.Angles(0, math.rad(0),0.6, 0, 0)
+            Tools[1].Parent = plr.Character
+            
+            Tools[2].Grip = CFrame.new(-0.999, -1.999, -.000) * CFrame.Angles(0.1, math.rad(0),0, 0, 0)
+            Tools[2].Parent = plr.Character
+            wait(0.2)
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            _G.dont = false
+            loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        local args = {
-            [1] = ";morph me DonaldTrump "
-        }
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "BIG DICK",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+                local args = {
+                [1] = ";morph me DonaldTrump "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+            wait()
+            local args1 = {
+                [1] = ";morph me Noob1 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            wait(1.5)
+            local args3 = {
+                [1] = ";hat me 4602617115 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+            wait(1.5)
+            local args4 = {
+                [1] = ";hat me 4602619613 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+            wait(1.5)
+            local args5 = {
+                [1] = ";hat me 4602623152 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args5))
+            wait(1.5)
+            local args6 = {
+                [1] = ";hat me 5858536049 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args6))
+            wait(1.5)
+            local args7 = {
+                [1] = ";hat me 4623675984 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args7))
+            wait(1.5)
+            local args8 = {
+                [1] = ";hat me 4602533885 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args8))
+            wait(1.5)
+            local args9 = {
+                [1] = ";hat me 4753437569 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args9))
+            wait(1.5)
+            local args10 = {
+                [1] = ";hat me 4611970333 "
+            }
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args10))
+            
+            wait(0.2)
+            speaker.Character["MeshPartAccessory"].Name = "Bob1"
+            speaker.Character["MeshPartAccessory"].Name = "Bob2"
+            speaker.Character["MeshPartAccessory"].Name = "Bob3"
+            speaker.Character["MeshPartAccessory"].Name = "Bob4"
+            speaker.Character["MeshPartAccessory"].Name = "Bob5"
+            speaker.Character["MeshPartAccessory"].Name = "Bob6"
+            speaker.Character["MeshPartAccessory"].Name = "Bob7"
+            speaker.Character["MeshPartAccessory"].Name = "Bob8"
+            
+            wait(0.3)
+            for i, v in pairs(speaker.Character:GetChildren()) do
+                if v:IsA("Accessory") then
+                    if v.Handle:FindFirstChildOfClass("Mesh") or v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                        if v.Handle:FindFirstChildOfClass("SpecialMesh") then
+                            v.Handle:FindFirstChildOfClass("SpecialMesh"):Remove()
+                        end
+                    end
+                end
+            end
+            
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+                if v:IsA("Tool") then
+                    v.Parent = game:GetService("Players").LocalPlayer.Character
+                end		
+            end
+            wait()
+            for i, v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v:IsA("Tool") then
+                    v:Destroy()
+                end
+            end
+            loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+            wait(0.6)
+            local plr1 = game:GetService("Players").LocalPlayer; plr1.Character.Humanoid:UnequipTools()
+            
+            local Tools1 = plr1.Backpack:GetChildren()
+    
+            Tools1[1].Grip = CFrame.new(0.121, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[1].Parent = plr1.Character
+    
+            Tools1[2].Grip = CFrame.new(-5.831, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[2].Parent = plr1.Character
+    
+            Tools1[3].Grip = CFrame.new(-11.787, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[3].Parent = plr1.Character
+    
+            Tools1[4].Grip = CFrame.new(-17.729, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[4].Parent = plr1.Character
+    
+            Tools1[5].Grip = CFrame.new(-23.667, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[5].Parent = plr1.Character
+    
+            Tools1[6].Grip = CFrame.new(-29.588, 1.006, 1.474) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[6].Parent = plr1.Character
+    
+            Tools1[7].Grip = CFrame.new(0.121, 1.006, 7.295) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[7].Parent = plr1.Character
+    
+            Tools1[8].Grip = CFrame.new(0.121, 1.006, -4.429) * CFrame.Angles(0, math.rad(-90),0, 1 -1)
+            Tools1[8].Parent = plr1.Character
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.5)
+            _G.dont = false
+            wait(.5)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Bread dick lol",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            local args = {
+                [1] = ";morph me DonaldTrump "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+            wait()
+            local args1 = {
+                [1] = ";morph me Noob1 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            wait()
+            local args3 = {
+                [1] = ";hat me 4794106130 "
+            }
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+    
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+                if v:IsA("Tool") then
+                    v.Parent = game:GetService("Players").LocalPlayer.Character
+                end		
+            end
+            wait()
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v:IsA("Tool") then
+                    v:Destroy()
+                end
+            end
+    
+            wait(0.2)
+            loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+            
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren()
         
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+            Tools[1].Grip = CFrame.new(-1.121, 1.506, -1.174) * CFrame.Angles(4.7, math.rad(-90),0, 1 -1)
+            Tools[1].Parent = plr.Character
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.5)
+            _G.dont = false
+            wait(.5)
+            loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Fe ass yeah just ass",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            local args = {
+                [1] = ";morph me DonaldTrump "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
+            wait(0.4)
+            local args1 = {
+                [1] = ";morph me Noob1 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            wait(0.4)
+            local args3 = {
+                [1] = ";hat me 10911958 "
+            }
+    
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
+            wait(0.4)
+            local args4 = {
+                [1] = ";hat me 11142504 "
+            }
+            
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
+    
         wait(0.4)
-        local args1 = {
-            [1] = ";morph me Noob1 "
-        }
-        
-            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -49.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args1))
-        wait()
-        local args2 = {
-            [1] = ";freeze "
-        }
-        
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args2))
-        wait(0.4)
-        local args3 = {
-            [1] = ";hat me 10911958 "
-        }
-
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args3))
-        wait(0.4)
-        local args4 = {
-            [1] = ";hat me 11142504 "
-        }
-        
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args4))
-
-    wait(0.4)
-    speaker.Character["Memorial Day 2009 Army Helmet"].Name = "Bob1" 
-    speaker.Character["Racing Helmet"].Name = "Bob2"
-
-    --سكربت blockhats
+        speaker.Character["Memorial Day 2009 Army Helmet"].Name = "Bob1" 
+        speaker.Character["Racing Helmet"].Name = "Bob2"
         wait(0.4)
         for i, v in pairs(speaker.Character:GetChildren()) do
             if v:IsA("Accessory") then
@@ -1607,363 +1576,417 @@
                 end
             end
         end
-        
-            --Tool
-                wait(0.4)
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
-            if v:IsA("Tool") then
-                v.Parent = game:GetService("Players").LocalPlayer.Character
-            end		
-        end
-        wait()
-        for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-            if v:IsA("Tool") then
-                v:Destroy()
+            wait(0.4)
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+                if v:IsA("Tool") then
+                    v.Parent = game:GetService("Players").LocalPlayer.Character
+                end		
             end
-        end
-
-        wait(0.4)
-        loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
-
-        wait(0.4)
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
-
-        Tools[1].Grip = CFrame.new(2.150, 1.900, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
-        Tools[1].Parent = plr.Character
-
-        Tools[2].Grip = CFrame.new(2.150, 1.100, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
-        Tools[2].Parent = plr.Character
-
-            local args = {
-            [1] = ";unFreeze "
-        }
-            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args))
-
-        speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-
-    -- Netless ReAnimation
-    -- Created by MiAiHsIs1226
-        wait(0.5)
-        _G.dont = false
-        wait(.5)
-        loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("FE MINIGUN",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6775268462")
-        wait(0.3)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 9063843256")
-        wait(1)
-        
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/mini%20gun"))()
-
-        GUI:Notify({
-            Title = "Note",
-            Content = "press e to equip & press q to unequip",
-            Duration = 5.2,
-        })
-    _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("Fe Sniper",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7604332496")
-        wait()
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
-        wait(1.5)
-        
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/FE%20SNIPER23432"))()
-    _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("GAINT MAN WITH A GUN",function()
-        if _G.dont == false then
-            _G.dont = true
-            GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
-            })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376526888")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5555280833")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794106130")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6902333316")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 18015906")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744219293")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744235800")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1743941933")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4585144193")
-        wait(0.7)
+            wait()
+            for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                if v:IsA("Tool") then
+                    v:Destroy()
+                end
+            end
     
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20gaint%20man%20with%20gun334565432q1345678432345643w2q"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("FE SKATEBOARD",function()
-        if _G.dont == false then
-            _G.dont = true
+            wait(0.4)
+            loadstring(game:HttpGet(('https://pastebin.com/raw/wUSYrgNw'),true))()
+    
+            wait(0.4)
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren()
+    
+            Tools[1].Grip = CFrame.new(2.150, 1.900, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
+            Tools[1].Parent = plr.Character
+    
+            Tools[2].Grip = CFrame.new(2.150, 1.100, -1.500) * CFrame.Angles(4.7, math.rad(-90),0, 0, 0)
+            Tools[2].Parent = plr.Character
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.5)
+            _G.dont = false
+            wait(.5)
+            loadstring(game:HttpGet("https://pastebin.com/raw/CQRszkzy"))()
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5063577434")
-        wait(1)
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "minigun",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            wait()
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6775268462")
+            wait(0.2)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 9063843256")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/mini%20gun"))()
+    
+            GUI:Notify({
+                Title = "Note",
+                Content = "press e to equip & press q to unequip",
+                Duration = 5.2,
+            })
+        _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Fe Sniper",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7604332496")
+            wait(0.2)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(1.5)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/FE%20SNIPER23432"))()
+        _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "gaint man with gun",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376526888")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5555280833")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4794106130")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6902333316")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 18015906")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744219293")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1744235800")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 1743941933")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4585144193")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.7)
         
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20skateboard"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("FE 2 GUNS",function()
-        if _G.dont == false then
-            _G.dont = true
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20gaint%20man%20with%20gun334565432q1345678432345643w2q"))()
+            _G.dont = false
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        wait(0.3)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
-        wait(0.3)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8262955749")
-        wait(0.3)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7168000945")
-        wait(1)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%202%20gun's"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
+        end
+        end,
+    })
 
-
-    fescripts:addButton("FE PC",function()
-        if _G.dont == false then
-            _G.dont = true
+    local Button = fescripts:CreateButton({
+        Name = "skateboard",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5063577434")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.7)
+            
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%20skateboard"))()
+            _G.dont = false
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678216978")
-        wait(0.3)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678225898")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6531974818")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6060224214")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5971691715")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5205483683")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 2309346267")
-        wait(1)
-        
-        loadstring(game:HttpGet("https://pastebin.com/raw/ChgDJkpE"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
+        end
+        end,
+    })
 
-    fescripts:addButton("FE HANDS",function()
-        if _G.dont == false then
-            _G.dont = true
+    local Button = fescripts:CreateButton({
+        Name = "fe 2 guns",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            wait(0.7)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+            wait(0.7)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8262955749")
+            wait(0.7)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7168000945")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/fe%202%20gun's"))()
+            _G.dont = false
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
-        wait(1)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4855525473")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8337370")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474313")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62724852")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 20372960")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376524487")
-        wait(2)
+        end
+        end,
+    })
 
-        loadstring(game:HttpGet("https://pastebin.com/raw/mvJvEQr7"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-
-    fescripts:addButton("FE SEX DOLL ",function()
-        if _G.dont == false then
-            _G.dont = true
+    local Button = fescripts:CreateButton({
+        Name = "Fe pc",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678216978")
+            wait(0.3)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6678225898")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6531974818")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 6060224214")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5971691715")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 5205483683")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 2309346267")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(1)
+            loadstring(game:HttpGet("https://pastebin.com/raw/ChgDJkpE"))()
+            _G.dont = false
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        wait(0.4)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
-        wait(1)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4904137145")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4246228452")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4911305457")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4822592866")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3992084515")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 14815761")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
-        wait(1.25)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
-        wait(2)
+        end
+        end,
+    })
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/klat3mk/m/main/r"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
-
-    fescripts:addButton("FE TANK",function()
-        if _G.dont == false then
-            _G.dont = true
+    local Button = fescripts:CreateButton({
+        Name = "Fe hands",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+            wait(0.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4855525473")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 8337370")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474313")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62724852")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 20372960")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 376524487")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.7)
+    
+            loadstring(game:HttpGet("https://pastebin.com/raw/mvJvEQr7"))()
+            _G.dont = false
+        else
             GUI:Notify({
-                 Title= "credits",
-                Content = "that was Made by Khlat and Makram Dacca ",
-                Duration = 10,
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
             })
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
-        wait(0.7)
-        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4735116238")
-        wait(0.5)
-        loadstring(game:HttpGet("https://pastebin.com/raw/2QcSrY1M"))()
-        _G.dont = false
-    else
-        GUI:Notify({
-            Title = "Note",
-            Content = "a script is already running",
-            Duration = 2,
-        })
-    end
-    end)
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Fe sex doll",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            wait(0.4)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";char ")
+            wait(0.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4904137145")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4246228452")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4911305457")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4822592866")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 3992084515")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 14815761")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 48474294")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 63690008")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 62234425")
+            wait(1.25)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 451220849")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.7)
+    
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/d/main/sex%20doll"))()
+            _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
+
+    local Button = fescripts:CreateButton({
+        Name = "Fe tank",
+        Callback = function()
+            if _G.dont == false then
+                _G.dont = true
+                GUI:Notify({
+                     Title= "credits",
+                    Content = "that was Made by Khlat and Makram Dacca ",
+                    Duration = 6.2,
+                })
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Morph me DonaldTrump ")
+            local Pos = speaker.Character.HumanoidRootPart.CFrame
+            speaker.Character.HumanoidRootPart.CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+            speaker.Character.Humanoid.WalkSpeed = 0
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
+            wait(0.5)
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4735116238")
+            speaker.Character.HumanoidRootPart.CFrame = Pos
+            speaker.Character.Humanoid.WalkSpeed = 20
+            wait(0.5)
+            loadstring(game:HttpGet("https://pastebin.com/raw/2QcSrY1M"))()
+            _G.dont = false
+        else
+            GUI:Notify({
+                Title = "Note",
+                Content = "a script is already running",
+                Duration = 2,
+            })
+        end
+        end,
+    })
 
     local misc = UI:CreateTab("Misc")
 
