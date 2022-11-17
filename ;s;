@@ -30,13 +30,13 @@
         local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/fff2dwaNNnw243f/SICK-UI/main/SICK%20UI23r4t5e6rtdsdfe"))()
     _G.dont = false
     local UI = GUI:CreateWindow({
-        Name = "shrmuta hub",
-        LoadingTitle = "Loading Shrmuta hub..",
+        Name = "Roxy hub",
+        LoadingTitle = "Loading Roxy hub..",
         LoadingSubtitle = "by dream & mkrm",
         ConfigurationSaving = {
             Enabled = true,
             FolderName = "shmuta hub folder", 
-            FileName = "shrmuta Hub"
+            FileName = "Roxy Hub"
         },
             Discord = {
                 Enabled = false,
@@ -45,7 +45,7 @@
             },
         KeySystem = true, 
         KeySettings = {
-            Title = "shrmuta Hub",
+            Title = "Roxy Hub",
             Subtitle = "Key System",
             Note = "the key is top",
             FileName = "key system",
@@ -233,72 +233,17 @@
     end
     end)
 
-    function antikill()
-        getgenv().AntiVoid = true -- // toggle it on and off
 
-    -- // Services
-    local Players = game:GetService("Players")
-
-    -- // Vars
-    local LocalPlayer = Players.LocalPlayer
-
-    -- // Check if anyone has the same handle as you
-    local function toolMatch(Handle)
-        local allPlayers = Players:GetPlayers()
-        for i = 1, #allPlayers do
-            -- // Vars
-            local Player = allPlayers[i]
-            if (Player == LocalPlayer) then continue end -- // ignore local player
-
-            -- // Vars
-            local Character = Player.Character
-            local RightArm = Character:WaitForChild("Right Arm")
-            local RightGrip = RightArm:FindFirstChild("RightGrip")
-
-            -- // Check if they share the same Part1 Handle of the Grip
-            if (RightGrip and RightGrip.Part1 == Handle) then
-                return Player
-            end
-        end
-    end
-
-    -- // Manager
-    local function onCharacter(Character)
-        local RightArm = Character:WaitForChild("Right Arm")
-
-        -- // See when you equip something
-        RightArm.ChildAdded:Connect(function(child)
-            if (child:IsA("Weld") and child.Name == "RightGrip" and getgenv().AntiVoid) then
-                -- // Vars
-                local ConnectedHandle = child.Part1
-
-                -- // Check if someone else has something equipped too with the same handle as you
-                local matched = toolMatch(ConnectedHandle)
-
-                -- // Destroy the tool, if someone is voiding you
-                if (matched) then
-                    ConnectedHandle.Parent:Destroy()
-                    print(matched, "just tried to void you lol!")
-                end
-            end
-        end)
-    end
-
-    -- // Initialise the script
-    onCharacter(LocalPlayer.Character)
-    LocalPlayer.CharacterAdded:Connect(onCharacter)
-    end
-
-    function unantikill()
-        getgenv().AntiVoid = false
-    end
 
     spawn(function ()
         function AK()
-        removetools()
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 20 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
-        
+        local Tools = plr.Backpack:GetChildren(radio)
         Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
         Tools[1].Parent = plr.Character
 
@@ -359,13 +304,17 @@
         Tools[20].Grip = CFrame.new(3.8, -4.4, -0.27) * CFrame.Angles(1.6, math.rad(-137), 1.6)
         Tools[20].Parent = plr.Character
         end
-    end)
+        end)
 
     spawn(function ()
         function PICKAXE()
-        removetools()
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 8 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
 
         Tools[1].Grip = CFrame.new(-0.4, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
         Tools[1].Parent = plr.Character
@@ -395,9 +344,13 @@
 
     spawn(function ()
         function RPG()
-        removetools()
+        GUI:Notify({
+                Title = "Note",
+                Content = "you must have 13 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
         
         Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
         Tools[1].Parent = plr.Character
@@ -441,9 +394,13 @@
     end)
     spawn(function ()
         function SWORD()
-        removetools()        
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 10 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
 
         Tools[1].Grip = CFrame.new(0, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
         Tools[1].Parent = plr.Character
@@ -467,6 +424,7 @@
         Tools[7].Parent = plr.Character
 
         Tools[8].Grip = CFrame.new(8.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+
         Tools[8].Parent = plr.Character
 
         Tools[9].Grip = CFrame.new(10.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
@@ -479,25 +437,13 @@
 
     spawn(function ()
         function RAILGUNV1()
-        speaker.Backpack["رقصة 1"].Name = "قص"
-        speaker.Backpack["رقصة 2"].Name = "قص"
-        speaker.Backpack["رقصة 3"].Name = "قص"
-        speaker.Backpack["رقصة 4"].Name = "قص"
-        speaker.Backpack["رقصة 5"].Name = "قص"
-        speaker.Backpack["رقصة 6"].Name = "قص"
-        speaker.Backpack["رقصة 7"].Name = "قص"
-        speaker.Backpack["رقصة 8"].Name = "قص"
-        speaker.Backpack["رقصة 9"].Name = "قص"
-        speaker.Backpack["رقصة 01"].Name = "قص"
-        speaker.Backpack["رقصة 11"].Name = "قص"
-        speaker.Backpack["رقصة 21"].Name = "قص"
-        for i,v in pairs(speaker.Backpack:GetDescendants()) do
-            if v.Name ==  "قص" then
-                v:Destroy()
-            end
-        end
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 12 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
 
         Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
         Tools[1].Parent = plr.Character
@@ -540,9 +486,13 @@
 
     spawn(function ()
         function RAILGUNV2()
-            removetools()    
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 23 tools or it will not work",
+                Duration = 6.5,
+            })
             local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-            local Tools = plr.Backpack:GetChildren()
+            local Tools = plr.Backpack:GetChildren(radio)
         
             Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
         Tools[1].Parent = plr.Character
@@ -617,9 +567,13 @@
 
     spawn(function ()
         function pc()
-        removetools()        
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 11 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
 
         Tools[1].Grip = CFrame.new(0.8, 1.5, 0) * CFrame.Angles(1.575, math.rad(-180), 3.1)
         Tools[1].Parent = plr.Character
@@ -658,9 +612,13 @@
 
     spawn(function ()
         function BOOMBOXARM()
-        removetools()        
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 4 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
 
         Tools[1].Grip = CFrame.new(0.6, -0.1, -0.4) * CFrame.Angles(1.58, math.rad(-90), 0)
         Tools[1].Parent = plr.Character
@@ -678,9 +636,13 @@
 
     spawn(function ()
         function PHONE()
-        removetools()        
+            GUI:Notify({
+                Title = "Note",
+                Content = "you must have 6 tools or it will not work",
+                Duration = 6.5,
+            })
         local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren()
+        local Tools = plr.Backpack:GetChildren(radio)
         
         Tools[1].Grip = CFrame.new(-1, 0.5, 0) * CFrame.Angles(0.2, math.rad(-180), 58.1)
         Tools[1].Parent = plr.Character
@@ -701,6 +663,12 @@
         Tools[6].Parent = plr.Character
         end
     end)
+
+    function r15(plr)
+        if plr.Character:FindFirstChildOfClass('Humanoid').RigType == Enum.HumanoidRigType.R15 then
+            return true
+        end
+    end
 
     spawn(function ()
         function killv1()
@@ -810,11 +778,34 @@
        end,
    })
 
+   local Button = home:CreateButton({
+    Name = "Remove the Dance Tools",
+   Callback = function()
+    speaker.Backpack:FindFirstChild("رقصة 1").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 2").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 3").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 4").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 5").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 6").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 7").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 8").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 9").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 01").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 11").Name = "قص"
+    speaker.Backpack:FindFirstChild("رقصة 21").Name = "قص"
+    for i,v in pairs(speaker.Backpack:GetDescendants()) do
+        if v.Name ==  "قص" then
+            v:Destroy()
+        end
+    end
+   end
+   })
+   
+
     local Dropdown = home:CreateDropdown({
         Name = "BOOMBOX Grip Pos",
         Options = {"AK","pc"},
-        CurrentOption = "Option 1",
-        Flag = "grippos", 
+        CurrentOption = "AK",
         Callback = function(slc)
             if slc == "AK" then
                 AK()
@@ -826,10 +817,10 @@
 
     local LP =  UI:CreateTab("LocalPlayer")
 
-    -- Label
 
     local Section = LP:CreateSection("aka localplayer")
-    -- Slider
+
+
 
     local Slider = LP:CreateSlider({
         Name = "walkspeed",
@@ -854,7 +845,8 @@
     })
 
 
-    local flyjump
+    local flyjump 
+    wait()
     local Toggle = LP:CreateToggle({
         Name = "flyjump",
         CurrentValue = false,
@@ -881,6 +873,23 @@
         end,
     })
 
+    local Button = LP:CreateButton({
+        Name = "Safe zone",
+        Callback = function()
+            TweenService:Create(speaker.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear), {CFrame = CFrame.new(186.28096, 237.706467, -47.1299744, 1, 0, 0, 0, 1, 0, 0, 0, 1)}):Play()
+        end,
+    })
+
+    local Burrrrtton = LP:CreateButton({
+        Name = "Teleport back up",
+        Callback = function()
+            local tl = TweenService:Create(speaker.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear), {CFrame = CFrame.new(186.669998, 256.463959, -48.8735123, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+            tl:Play()
+            speaker.Character.Animate.Disabled = true
+            tl.Completed:wait()
+            speaker.Character.Animate.Disabled = false
+        end
+    })
 
     local Section = fescripts:CreateSection("most of the script's is not working we will fix that very soon")
     local Section = fescripts:CreateSection("if you crashed just reset?, or rejoin in the misc tab")
@@ -908,7 +917,6 @@
             else
                 GUI:Notify({
                      Title= "Stats",
-                    Content = "Faild Unknown Reasong..",
                     Duration = 5.2,
                 })
             end
@@ -1673,7 +1681,7 @@
             speaker.Character.Humanoid.WalkSpeed = 0
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";morph me noob1")
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 7604332496")
-            wait(0.2)
+            wait(0.6)
             game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";hat me 4504231783")
             speaker.Character.HumanoidRootPart.CFrame = Pos
             speaker.Character.Humanoid.WalkSpeed = 20
@@ -1994,137 +2002,159 @@
 
     local Section = misc:CreateSection("misc")
 
-    misc:addTextBox("Dupe","do 5",function(amount)
-        GUI:Notify({
-            Title = "Note",
-            Content = "Duping "..amount,
-            Duration = 5.2,
-        })
-        Dupe(amount)
-    end)
-
-    misc:addToggle("antibang",function(value)
-        if value == true then 
-            GUI:Notify({
-                Title = "Note",
-                Content = "AntiBnag is Active!",
-                Duration = 5.2,
-            })
-            antibang()
-        else 
-            GUI:Notify({
-                Title = "Note",
-                Content = "AntiBang Disabled..",
-                Duration = 5.2,
-            })
-            unantibang()
-        end
-    end)
-
-    misc:addToggle("grabtools!",function(value)
-        if value == true then 
-            GUI:Notify({
-                 Title= "Toggle",
-                Content = "Grabtools is Active",
-                Duration = 5.2,
-            })
-            grabtools()
-        else 
-            GUI:Notify({
-                 Title= "Toggle",
-                Content = "Grabtools is Disabled",
-                Duration = 5.2,
-            })
-            ungrabtools()
-        end
-    end)
-
-    GUI:Notify({
-        Title = "قبل لا تبدا",
-        Content = "صلي على محمد",
+    local Toggle = misc:CreateToggle({
+        Name = "antibang",
+        CurrentValue = false,
+        Flag = "ab", 
+        Callback = function(value)
+            if value == true then 
+                GUI:Notify({
+                    Title = "Note",
+                    Content = "AntiBnag is Active!",
+                    Duration = 5.2,
+                })
+                antibang()
+            else 
+                GUI:Notify({
+                    Title = "Note",
+                    Content = "AntiBang Disabled..",
+                    Duration = 5.2,
+                })
+                unantibang()
+            end
+        end,
     })
-    wait(5)
-    GUI:Notify({
-        Title = "announcements",
-        Content = "most of the script's is not working we will fix that soon",
+
+    local Toggle = misc:CreateToggle({
+        Name = "grabtools",
+        CurrentValue = false,
+        Flag = "gt", 
+        Callback = function(value)
+            if value == true then 
+                GUI:Notify({
+                     Title= "Toggle",
+                    Content = "Grabtools is Active",
+                    Duration = 5.2,
+                })
+                grabtools()
+            else 
+                GUI:Notify({
+                     Title= "Toggle",
+                    Content = "Grabtools is Disabled",
+                    Duration = 5.2,
+                })
+                ungrabtools()
+            end
+        end,
     })
 
 
-    misc:addButton("rejoin game",function()
-        GUI:Notify({
-            Title = "Note",
-            Content = "Rejoinning..",
-            Duration = 5.2,
-        })
-        wait(0.2)
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end)
+    local Button = misc:CreateButton({
+        Name = "Auto Rejoin",
+        Callback = function()
+            GUI:Notify({
+                Title = "Are you sure?",
+                Content = "this cannot be undone",
+                Duration = 6.5,
+                Actions = { 
+                    Button1 = {
+                        Name = "yes im sure",
+                        Callback = function()
+                            COREGUI = game:GetService("CoreGui")
+                            local Dir = COREGUI:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
+                            Dir.DescendantAdded:Connect(function(Err)
+                                if Err.Name == "ErrorTitle" then
+                                    Err:GetPropertyChangedSignal("Text"):Connect(function()
+                                        if Err.Text:sub(0, 12) == "Disconnected" then
+                                            if #Players:GetPlayers() <= 1 then
+                                                Players.LocalPlayer:Kick("\nRejoining...")
+                                                wait()
+                                                TeleportService:Teleport(PlaceId, Players.LocalPlayer)
+                                            else
+                                                TeleportService:TeleportToPlaceInstance(PlaceId, JobId, Players.LocalPlayer)
+                                            end
+                                        end
+                                    end)
+                                end
+                            end)
+                            GUI:Notify({
+                                Title = "Note",
+                                Content = "auto Rejoin is Active",
+                                Duration = 5.2,
+                            })
+                        end
+                    },
+                    Button2 = {
+                        Name = "no im not",
+                        Callback = function()
+                            GUI:Notify({
+                                Title = "",
+                                Content = "alright..",
+                                Duration = 2,
+                            })
+                        end
+                    },
+                },
+            })
+        end,
+    })
 
-    local credits = UI:addPage("credits",1,false,9)
+    local Button = misc:CreateButton({
+        Name = "Rejoin",
+        Callback = function()
+            GUI:Notify({
+                Title = "Note",
+                Content = "Rejoinning..",
+                Duration = 2,
+            })
+            wait(0.2)
+            game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+        end,
+    })
+    local credits = UI:CreateTab("Credits")
 
-    credits:addLabel("this hub was made by khlat and makram dacca ", "klat on top!")
+    local Section = credits:CreateSection("Credits")
 
-    credits:addLabel("social media for khlat :", "khlat#0089 on discord")
+    local Label = credits:CreateLabel("This Hub Was Made by Khlat and Makram Dacca")
 
-    credits:addLabel("social media for khlat :", "dream0_77777777777 on roblox")
+    local Label = credits:CreateLabel("Discord for Khlat : khlat#0089 ")
 
-    credits:addLabel("social media for makram :", "DARK16#7037 on discord")
 
-    credits:addLabel("social media for makram :", "mkrm dacca on yt")
+    local Label = credits:CreateLabel("Roblox Account for Khlat : dream0_77777777777")
 
-    credits:addLabel("social media for makram :", "makram12345 on roblox")
-    while wait() do
-        if speaker.CharacterAdded:wait() then
-    speaker.Backpack:FindFirstChild("رقصة 1").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 2").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 3").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 4").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 5").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 6").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 7").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 8").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 9").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 01").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 11").Name = "قص"
-    speaker.Backpack:FindFirstChild("رقصة 21").Name = "قص"
-    for i,v in pairs(speaker.Backpack:GetDescendants()) do
-        if v.Name ==  "قص" then
-            v:Destroy()
-        end
-    end 
-end
-end
+    local Label = credits:CreateLabel("Discord for Makram : DARK16#7037")
 
+    local Label = credits:CreateLabel("Check Out Mkrms Channel : Mkrm Dacca")
+
+    local Label = credits:CreateLabel("Roblox Account for Makram : makram12345")
+GUI:LoadConfiguration()
 while true do 
-    for i,v in pairs(game:GetDescendants()) do
-        if v.Name == "Baseplate553" then
-    v.Color = Color3.new(255/255,0/255,0/255)
+        if Workspace.Baseplate553 then
+    Workspace.Baseplate553.Color = Color3.new(255/255,0/255,0/255)
     for i = 0,255,10 do
     wait()
-    v.Color = Color3.new(255/255,i/255,0/255)
+    Workspace.Baseplate553.Color = Color3.new(255/255,i/255,0/255)
     end
     for i = 255,0,-10 do
     wait()
-    v.Color = Color3.new(i/255,255/255,0/255)
+    Workspace.Baseplate553.Color = Color3.new(i/255,255/255,0/255)
     end
     for i = 0,255,10 do
     wait()
-    v.Color = Color3.new(0/255,255/255,i/255)
+    Workspace.Baseplate553.Color = Color3.new(0/255,255/255,i/255)
     end
     for i = 255,0,-10 do
     wait()
-    v.Color = Color3.new(0/255,i/255,255/255)
+    Workspace.Baseplate553.Color = Color3.new(0/255,i/255,255/255)
     end
     for i = 0,255,10 do
     wait()
-    v.Color = Color3.new(i/255,0/255,255/255)
+    Workspace.Baseplate553.Color = Color3.new(i/255,0/255,255/255)
     end
     for i = 255,0,-10 do
     wait()
-    v.Color = Color3.new(255/255,0/255,i/255)
-    end
+    Workspace.Baseplate553.Color = Color3.new(255/255,0/255,i/255)
     end
     end
 end
 end
-Rayfield:LoadConfiguration()
