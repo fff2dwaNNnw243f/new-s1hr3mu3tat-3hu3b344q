@@ -857,11 +857,25 @@
 
     local Dropdown = home:CreateDropdown({
         Name = "BOOMBOX Grip Pos",
-        Options = {"AK","pc"},
+        Options = {"AK","pc","railgun","railgun V2","pickaxe","RPG","sword","phone","boomboxarm"},
         CurrentOption = "AK",
         Callback = function(slc)
             if slc == "AK" then
                 AK()
+            elseif slc == "railgun" then
+                RAILGUNV1()
+            elseif slc == "railgun V2" then
+                RAILGUNV2()
+            elseif slc == "pickaxe" then
+                PICKAXE()
+            elseif slc == "RPG" then
+                RPG()
+            elseif slc == "sword" then
+                SWORD()
+            elseif slc == "phone" then
+                PHONE()
+            elseif slc == "boomboxarm" then
+                BOOMBOXARM()
             elseif slc == "pc" then
                 pc()
             end
