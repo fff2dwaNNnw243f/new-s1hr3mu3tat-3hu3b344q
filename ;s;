@@ -65,7 +65,7 @@
     wait(5)
     GUI:Notify({
         Title = "announcements",
-        Content = "most of the script's is not working we will fix that soon",
+        Content = "Everything is fixed!! NEW UI",
         Duration = 6.2,
     })
     local home = UI:CreateTab("Home", 4483362458)
@@ -103,9 +103,9 @@
             if stopDupe then
                 break
             end
-            wait(0.5)
+            wait(0.4)
             speaker.Character:MoveTo(Vector3.new(0, 1e7, 0))
-            wait(.3)
+            wait(.2)
             for i, v in pairs(speaker.Backpack:GetChildren()) do
                 if v:IsA("Tool") and v.Name == radio then
                     v.Parent = speaker.Character
@@ -114,21 +114,15 @@
                     table.insert(DropT, v)
                 end
             end
-            wait(.3)
-            print("Respawning.!")
-            local args = {
-                [1] = ";respawn "
-            }
-
+            wait(.2)
             repeat 
-                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(unpack(args)) wait()
-            print("repeating")
+                game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";respawn ") wait()
             until speaker.CharacterAdded:wait()
             if stopDupe then
                 break
             end
         end
-        wait(0.3)
+        wait(0.2)
         speaker.Character.Humanoid:UnequipTools()
         wait(0.3)
         for i, v in pairs(Workspace:GetChildren("\216\167\217\132\216\167\216\186\216\167\217\134\217\138 \217\133\216\179\216\172\217\132")) do
@@ -140,7 +134,7 @@
         grabtools()
         wait(0.5)
         ungrabtools()
-    wait(.3)
+    wait(.4)
     end    
 
     function antibang()
@@ -149,25 +143,25 @@
         baseplate.Parent = workspace
         baseplate.Size = Vector3.new(30,1,30)
         baseplate.Anchored = true
-        baseplate.Name = "Baseplate55"
+        baseplate.Name = "Baseplate553"
+
         baseplate.Position = Vector3.new(0, -507.5284729003906, 0)
         killv2()  
         wait(0.2)
         while _G.ay == true do
         local Pos = speaker.Character.HumanoidRootPart.CFrame
         speaker.Character.HumanoidRootPart.CFrame = CFrame.new(0, -504.5284729003906, 0)
-        wait(0.3)
+        wait(0.5)
         speaker.Character.HumanoidRootPart.CFrame = Pos
-        wait(7)
+        wait(8)
         end
-        
     end
 
     function unantibang()
         _G.ay = false
         wait(1)
         for i,v in pairs(game:GetDescendants()) do
-            if v.Name == "Baseplate55" then v:Destroy() end
+            if v.Name == "Baseplate" then v:Destroy() end
         end
     end
 
@@ -247,67 +241,67 @@
                 Content = "you must have 20 tools or it will not work",
                 Duration = 6.5,
             })
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren(radio)
-        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
-        Tools[1].Parent = plr.Character
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren(radio)
+            Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+            Tools[1].Parent = plr.Character
 
-        Tools[2].Grip = CFrame.new(0.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[2].Parent = plr.Character
+            Tools[2].Grip = CFrame.new(0.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[2].Parent = plr.Character
 
-        Tools[3].Grip = CFrame.new(-1.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0.03)
-        Tools[3].Parent = plr.Character
+            Tools[3].Grip = CFrame.new(-1.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0.03)
+            Tools[3].Parent = plr.Character
 
-        Tools[4].Grip = CFrame.new(-2.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[4].Parent = plr.Character
+            Tools[4].Grip = CFrame.new(-2.5, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(-4.6, -0.4, -0.2) * CFrame.Angles(1.6, math.rad(-98), 1.6)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(-4.6, -0.4, -0.2) * CFrame.Angles(1.6, math.rad(-98), 1.6)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(-7, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[6].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(-7, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[6].Parent = plr.Character
 
-        Tools[7].Grip = CFrame.new(-9.6, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[7].Parent = plr.Character
+            Tools[7].Grip = CFrame.new(-9.6, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[7].Parent = plr.Character
 
-        Tools[8].Grip = CFrame.new(-12.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[8].Parent = plr.Character
+            Tools[8].Grip = CFrame.new(-12.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[8].Parent = plr.Character
 
-        Tools[9].Grip = CFrame.new(-1.2, -3.1, -0.2) * CFrame.Angles(1.6, math.rad(-15), 1.6)
-        Tools[9].Parent = plr.Character
+            Tools[9].Grip = CFrame.new(-1.2, -3.1, -0.2) * CFrame.Angles(1.6, math.rad(-15), 1.6)
+            Tools[9].Parent = plr.Character
 
-        Tools[10].Grip = CFrame.new(-3.3, -2.7, -0.2) * CFrame.Angles(1.6, math.rad(-25), 1.6)
-        Tools[10].Parent = plr.Character
+            Tools[10].Grip = CFrame.new(-3.3, -2.7, -0.2) * CFrame.Angles(1.6, math.rad(-25), 1.6)
+            Tools[10].Parent = plr.Character
 
-        Tools[11].Grip = CFrame.new(-0.1, 1.8, -0.1) * CFrame.Angles(1.6, math.rad(65), 1.6)
-        Tools[11].Parent = plr.Character
+            Tools[11].Grip = CFrame.new(-0.1, 1.8, -0.1) * CFrame.Angles(1.6, math.rad(65), 1.6)
+            Tools[11].Parent = plr.Character
 
-        Tools[12].Grip = CFrame.new(1.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
-        Tools[12].Parent = plr.Character
+            Tools[12].Grip = CFrame.new(1.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+            Tools[12].Parent = plr.Character
 
-        Tools[13].Grip = CFrame.new(3.15, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
-        Tools[13].Parent = plr.Character
+            Tools[13].Grip = CFrame.new(3.15, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+            Tools[13].Parent = plr.Character
 
-        Tools[14].Grip = CFrame.new(5.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
-        Tools[14].Parent = plr.Character
+            Tools[14].Grip = CFrame.new(5.3, 2.05, -0.1) * CFrame.Angles(1.6, math.rad(90), 1.6)
+            Tools[14].Parent = plr.Character
 
-        Tools[15].Grip = CFrame.new(6.5, 4.1, -0.1) * CFrame.Angles(1.6, math.rad(110), 1.6)
-        Tools[15].Parent = plr.Character
+            Tools[15].Grip = CFrame.new(6.5, 4.1, -0.1) * CFrame.Angles(1.6, math.rad(110), 1.6)
+            Tools[15].Parent = plr.Character
 
-        Tools[16].Grip = CFrame.new(-14.3, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[16].Parent = plr.Character
+            Tools[16].Grip = CFrame.new(-14.3, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[16].Parent = plr.Character
 
-        Tools[17].Grip = CFrame.new(3.1, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[17].Parent = plr.Character
+            Tools[17].Grip = CFrame.new(3.1, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[17].Parent = plr.Character
 
-        Tools[18].Grip = CFrame.new(5.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
-        Tools[18].Parent = plr.Character
+            Tools[18].Grip = CFrame.new(5.2, -1.2, -0.2) * CFrame.Angles(0, math.rad(-90), 0)
+            Tools[18].Parent = plr.Character
 
-        Tools[19].Grip = CFrame.new(0.25, 6.8, -0.05) * CFrame.Angles(1.6, math.rad(-0), 1.6)
-        Tools[19].Parent = plr.Character
+            Tools[19].Grip = CFrame.new(0.25, 6.8, -0.05) * CFrame.Angles(1.6, math.rad(-0), 1.6)
+            Tools[19].Parent = plr.Character
 
-        Tools[20].Grip = CFrame.new(3.8, -4.4, -0.27) * CFrame.Angles(1.6, math.rad(-137), 1.6)
-        Tools[20].Parent = plr.Character
+            Tools[20].Grip = CFrame.new(3.8, -4.4, -0.27) * CFrame.Angles(1.6, math.rad(-137), 1.6)
+            Tools[20].Parent = plr.Character
         end
         end)
 
@@ -318,32 +312,32 @@
                 Content = "you must have 8 tools or it will not work",
                 Duration = 6.5,
             })
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren(radio)
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren(radio)
 
-        Tools[1].Grip = CFrame.new(-0.4, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
-        Tools[1].Parent = plr.Character
+            Tools[1].Grip = CFrame.new(-0.4, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+            Tools[1].Parent = plr.Character
 
-        Tools[2].Grip = CFrame.new(-2.7, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
-        Tools[2].Parent = plr.Character
+            Tools[2].Grip = CFrame.new(-2.7, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+            Tools[2].Parent = plr.Character
 
-        Tools[3].Grip = CFrame.new(-4.5, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
-        Tools[3].Parent = plr.Character
+            Tools[3].Grip = CFrame.new(-4.5, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+            Tools[3].Parent = plr.Character
 
-        Tools[4].Grip = CFrame.new(-6.3, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
-        Tools[4].Parent = plr.Character
+            Tools[4].Grip = CFrame.new(-6.3, 0.6, 0) * CFrame.Angles(1.6, math.rad(-180), 1.58)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(-0.3, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(-0.3, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(1.8, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
-        Tools[6].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(1.8, 6.85, -0.4) * CFrame.Angles(38.5, math.rad(-270), 2.3)
+            Tools[6].Parent = plr.Character
 
-        Tools[7].Grip = CFrame.new(3.3, 5.4, 0.32) * CFrame.Angles(1.6, math.rad(-320), 1.6)
-        Tools[7].Parent = plr.Character
+            Tools[7].Grip = CFrame.new(3.3, 5.4, 0.32) * CFrame.Angles(1.6, math.rad(-320), 1.6)
+            Tools[7].Parent = plr.Character
 
-        Tools[8].Grip = CFrame.new(-2.42, 6.6, 0.32) * CFrame.Angles(1.6, math.rad(-220), 1.6)
-        Tools[8].Parent = plr.Character
+            Tools[8].Grip = CFrame.new(-2.42, 6.6, 0.32) * CFrame.Angles(1.6, math.rad(-220), 1.6)
+            Tools[8].Parent = plr.Character
         end
     end)
 
@@ -354,47 +348,47 @@
                 Content = "you must have 13 tools or it will not work",
                 Duration = 6.5,
             })
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren(radio)
-        
-        Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
-        Tools[1].Parent = plr.Character
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren(radio)
+            
+            Tools[1].Grip = CFrame.new(0.7, -0.5, -0.2) * CFrame.Angles(50, math.rad(-180), 3.13)
+            Tools[1].Parent = plr.Character
 
-        Tools[2].Grip = CFrame.new(0.7, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
-        Tools[2].Parent = plr.Character
+            Tools[2].Grip = CFrame.new(0.7, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+            Tools[2].Parent = plr.Character
 
-        Tools[3].Grip = CFrame.new(2.5, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
-        Tools[3].Parent = plr.Character
-        
-        Tools[4].Grip = CFrame.new(4.3, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
-        Tools[4].Parent = plr.Character
+            Tools[3].Grip = CFrame.new(2.5, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+            Tools[3].Parent = plr.Character
+            
+            Tools[4].Grip = CFrame.new(4.3, -1.2, -0.2) * CFrame.Angles(1.6, math.rad(-98),1.6)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(-6.5, -1.6, -0.2) * CFrame.Angles(1.6, math.rad(-250),1.6)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(-6.5, -1.6, -0.2) * CFrame.Angles(1.6, math.rad(-250),1.6)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(6, -2.55, -0.2) * CFrame.Angles(1.6, math.rad(-115),1.6)
-        Tools[6].Parent = plr.Character
-        
-        Tools[7].Grip = CFrame.new(1.55, 7.2, 0.1) * CFrame.Angles(1.6, math.rad(-10),1.6)
-        Tools[7].Parent = plr.Character
-        
-        Tools[8].Grip = CFrame.new(-1.1, -1.2, -0.23) * CFrame.Angles(1.6, math.rad(-98),1.57)
-        Tools[8].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(6, -2.55, -0.2) * CFrame.Angles(1.6, math.rad(-115),1.6)
+            Tools[6].Parent = plr.Character
+            
+            Tools[7].Grip = CFrame.new(1.55, 7.2, 0.1) * CFrame.Angles(1.6, math.rad(-10),1.6)
+            Tools[7].Parent = plr.Character
+            
+            Tools[8].Grip = CFrame.new(-1.1, -1.2, -0.23) * CFrame.Angles(1.6, math.rad(-98),1.57)
+            Tools[8].Parent = plr.Character
 
-        Tools[9].Grip = CFrame.new(-2.8, -1.17, -0.17) * CFrame.Angles(1.6, math.rad(-99),1.6)
-        Tools[9].Parent = plr.Character
-        
-        Tools[10].Grip = CFrame.new(0, 2.7, -0.2) * CFrame.Angles(1.575, math.rad(-175),1.575)
-        Tools[10].Parent = plr.Character
-        
-        Tools[11].Grip = CFrame.new(-4.6, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
-        Tools[11].Parent = plr.Character
-        
-        Tools[12].Grip = CFrame.new(-6.3, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
-        Tools[12].Parent = plr.Character
+            Tools[9].Grip = CFrame.new(-2.8, -1.17, -0.17) * CFrame.Angles(1.6, math.rad(-99),1.6)
+            Tools[9].Parent = plr.Character
+            
+            Tools[10].Grip = CFrame.new(0, 2.7, -0.2) * CFrame.Angles(1.575, math.rad(-175),1.575)
+            Tools[10].Parent = plr.Character
+            
+            Tools[11].Grip = CFrame.new(-4.6, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+            Tools[11].Parent = plr.Character
+            
+            Tools[12].Grip = CFrame.new(-6.3, -1.1, -0.17) * CFrame.Angles(1.6, math.rad(-100),1.6)
+            Tools[12].Parent = plr.Character
 
-        Tools[13].Grip = CFrame.new(-1, 6, -0.45) * CFrame.Angles(1.6, math.rad(-205),1.4)
-        Tools[13].Parent = plr.Character
+            Tools[13].Grip = CFrame.new(-1, 6, -0.45) * CFrame.Angles(1.6, math.rad(-205),1.4)
+            Tools[13].Parent = plr.Character
         end
     end)
     spawn(function ()
@@ -404,39 +398,39 @@
                 Content = "you must have 10 tools or it will not work",
                 Duration = 6.5,
             })
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren(radio)
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren(radio)
 
-        Tools[1].Grip = CFrame.new(0, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[1].Parent = plr.Character
+            Tools[1].Grip = CFrame.new(0, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[1].Parent = plr.Character
 
-        Tools[2].Grip = CFrame.new(0.15, 1.7, -0.02) * CFrame.Angles(1.58, math.rad(90), 1.58)
-        Tools[2].Parent = plr.Character
+            Tools[2].Grip = CFrame.new(0.15, 1.7, -0.02) * CFrame.Angles(1.58, math.rad(90), 1.58)
+            Tools[2].Parent = plr.Character
 
-        Tools[3].Grip = CFrame.new(3, -0.9, -0.05) * CFrame.Angles(1.58, math.rad(-45), 1.58)
-        Tools[3].Parent = plr.Character
+            Tools[3].Grip = CFrame.new(3, -0.9, -0.05) * CFrame.Angles(1.58, math.rad(-45), 1.58)
+            Tools[3].Parent = plr.Character
 
-        Tools[4].Grip = CFrame.new(-3.1, -0.67, -0.049) * CFrame.Angles(1.58, math.rad(-135), 1.58)
-        Tools[4].Parent = plr.Character
+            Tools[4].Grip = CFrame.new(-3.1, -0.67, -0.049) * CFrame.Angles(1.58, math.rad(-135), 1.58)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(2.2, -0.3, -0.03) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(2.2, -0.3, -0.03) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(4.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[6].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(4.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[6].Parent = plr.Character
 
-        Tools[7].Grip = CFrame.new(6.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[7].Parent = plr.Character
+            Tools[7].Grip = CFrame.new(6.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[7].Parent = plr.Character
 
-        Tools[8].Grip = CFrame.new(8.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[8].Grip = CFrame.new(8.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
 
-        Tools[8].Parent = plr.Character
+            Tools[8].Parent = plr.Character
 
-        Tools[9].Grip = CFrame.new(10.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[9].Parent = plr.Character
+            Tools[9].Grip = CFrame.new(10.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[9].Parent = plr.Character
 
-        Tools[10].Grip = CFrame.new(12.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
-        Tools[10].Parent = plr.Character
+            Tools[10].Grip = CFrame.new(12.2, -0.3, 0) * CFrame.Angles(1.58, math.rad(-360), 1.58)
+            Tools[10].Parent = plr.Character
         end
     end)
 
@@ -447,44 +441,44 @@
                 Content = "you must have 12 tools or it will not work",
                 Duration = 6.5,
             })
-        local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
-        local Tools = plr.Backpack:GetChildren(radio)
+            local plr = game:GetService("Players").LocalPlayer; plr.Character.Humanoid:UnequipTools()
+            local Tools = plr.Backpack:GetChildren(radio)
 
-        Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
-        Tools[1].Parent = plr.Character
+            Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+            Tools[1].Parent = plr.Character
 
-        Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
-        Tools[2].Parent = plr.Character
+            Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
+            Tools[2].Parent = plr.Character
 
-        tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[3].Parent = plr.Character
+            tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[3].Parent = plr.Character
 
-        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
-        Tools[4].Parent = plr.Character
+            Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
-        Tools[6].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+            Tools[6].Parent = plr.Character
 
-        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
-        Tools[7].Parent = plr.Character
+            Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+            Tools[7].Parent = plr.Character
 
-        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
-        Tools[8].Parent = plr.Character
-        
-        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[9].Parent = plr.Character
+            Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+            Tools[8].Parent = plr.Character
+            
+            Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[9].Parent = plr.Character
 
-        Tools[10].Grip = CFrame.new(-2.3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[10].Parent = plr.Character
+            Tools[10].Grip = CFrame.new(-2.3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[10].Parent = plr.Character
 
-        Tools[11].Grip = CFrame.new(-3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[11].Parent = plr.Character
+            Tools[11].Grip = CFrame.new(-3, -3.8, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[11].Parent = plr.Character
 
-        Tools[12].Grip = CFrame.new(3, 4.8, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[12].Parent = plr.Character
+            Tools[12].Grip = CFrame.new(3, 4.8, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[12].Parent = plr.Character
         end
     end)
 
@@ -500,60 +494,60 @@
             local Tools = plr.Backpack:GetChildren(radio)
         
             Tools[1].Grip = CFrame.new(1.1, -1.2, 0) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
-        Tools[1].Parent = plr.Character
+            Tools[1].Parent = plr.Character
 
             Tools[2].Grip = CFrame.new(2.7, -1.2, 0.02) * CFrame.Angles(-1.58, math.rad(-108), -1.58)
-        Tools[2].Parent = plr.Character
+            Tools[2].Parent = plr.Character
 
-        Tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[3].Parent = plr.Character
+            Tools[3].Grip = CFrame.new(4.5, -2.34, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[3].Parent = plr.Character
 
-        Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
-        Tools[4].Parent = plr.Character
+            Tools[4].Grip = CFrame.new(4, 5.1, -0.07) * CFrame.Angles(-1.58, math.rad(-180), -1.58)
+            Tools[4].Parent = plr.Character
 
-        Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
-        Tools[5].Parent = plr.Character
+            Tools[5].Grip = CFrame.new(-5.6, 0.9, -0.07) * CFrame.Angles(-1.58, math.rad(-305), -1.58)
+            Tools[5].Parent = plr.Character
 
-        Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
-        Tools[6].Parent = plr.Character
+            Tools[6].Grip = CFrame.new(-1.29, 3.5, -0.07) * CFrame.Angles(-1.58, math.rad(-262), -1.58)
+            Tools[6].Parent = plr.Character
 
-        Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
-        Tools[7].Parent = plr.Character
+            Tools[7].Grip = CFrame.new(4, 1, -0.07) * CFrame.Angles(-1.58, math.rad(-193), -1.58)
+            Tools[7].Parent = plr.Character
 
-        Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
-        Tools[8].Parent = plr.Character
+            Tools[8].Grip = CFrame.new(-2.8, -0.8, 0) * CFrame.Angles(-1.58, math.rad(-25), -1.58)
+            Tools[8].Parent = plr.Character
 
-        Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[9].Parent = plr.Character
+            Tools[9].Grip = CFrame.new(0.8, 4.8, -0.07) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[9].Parent = plr.Character
 
-        Tools[10].Grip = CFrame.new(0.6, -2.8, 0) * CFrame.Angles(-1.58, math.rad(-80), -1.58)
-        Tools[10].Parent = plr.Character
+            Tools[10].Grip = CFrame.new(0.6, -2.8, 0) * CFrame.Angles(-1.58, math.rad(-80), -1.58)
+            Tools[10].Parent = plr.Character
 
-        Tools[11].Grip = CFrame.new(-7.3, -2.3, 0) * CFrame.Angles(-1.58, math.rad(-45), -1.58)
-        Tools[11].Parent = plr.Character
+            Tools[11].Grip = CFrame.new(-7.3, -2.3, 0) * CFrame.Angles(-1.58, math.rad(-45), -1.58)
+            Tools[11].Parent = plr.Character
 
-        Tools[12].Grip = CFrame.new(1.2, 3.95, -0.062) * CFrame.Angles(-1.58, math.rad(45), -1.58)
-        Tools[12].Parent = plr.Character
+            Tools[12].Grip = CFrame.new(1.2, 3.95, -0.062) * CFrame.Angles(-1.58, math.rad(45), -1.58)
+            Tools[12].Parent = plr.Character
 
-        Tools[13].Grip = CFrame.new(4.3, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[13].Parent = plr.Character
-        
-        Tools[14].Grip = CFrame.new(-4.3, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[14].Parent = plr.Character
+            Tools[13].Grip = CFrame.new(4.3, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[13].Parent = plr.Character
+            
+            Tools[14].Grip = CFrame.new(-4.3, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[14].Parent = plr.Character
 
-        Tools[15].Grip = CFrame.new(6.6, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[15].Parent = plr.Character
+            Tools[15].Grip = CFrame.new(6.6, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[15].Parent = plr.Character
 
-        Tools[16].Grip = CFrame.new(-6.6, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[16].Parent = plr.Character
+            Tools[16].Grip = CFrame.new(-6.6, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[16].Parent = plr.Character
 
-        Tools[17].Grip = CFrame.new(8.8, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
-        Tools[17].Parent = plr.Character
+            Tools[17].Grip = CFrame.new(8.8, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[17].Parent = plr.Character
 
-        Tools[18].Grip = CFrame.new(-8.8, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
-        Tools[18].Parent = plr.Character
+            Tools[18].Grip = CFrame.new(-8.8, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
+            Tools[18].Parent = plr.Character
 
-        Tools[19].Grip = CFrame.new(11, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
+            Tools[19].Grip = CFrame.new(11, 5.3, -0.075) * CFrame.Angles(-1.58, math.rad(-270), -1.58)
             Tools[19].Parent = plr.Character
 
             Tools[20].Grip = CFrame.new(-11, -3.5, 0) * CFrame.Angles(-1.58, math.rad(-90), -1.58)
@@ -669,6 +663,78 @@
         end
     end)
 
+    function Equip()
+        for i, v in pairs(speaker.Backpack:GetChildren()) do
+            if v:IsA("Tool") and v.Name == radio then
+                wait(.08)
+                v.Parent = speaker.Character
+            end
+        end
+    end
+
+    function Mesh()
+        Equip()
+        -- [ Locals ] --
+        local Player = game.Players.LocalPlayer
+        local Char = Player.Character
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name == "Union" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "Beam" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "B1" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "B2" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "BB1" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "BB2" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "ParticleEmitter" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "Trail" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "Trail" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "Trail0" then
+                v:Destroy()
+         end
+        end
+        for i,v in pairs(Char:GetDescendants()) do
+            if v.Name ==  "Trail1" then
+                v:Destroy()
+         end
+        end
+        game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";visible me")
+        end
+
     function r15(plr)
         if plr.Character:FindFirstChildOfClass('Humanoid').RigType == Enum.HumanoidRigType.R15 then
             return true
@@ -677,23 +743,30 @@
 
     spawn(function ()
         function killv1()
-        if _G.killv1 == false then
+        if not game:GetService("CoreGui")["IvAdmin CommandBar"] then
+            if _G.killv1 == false then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/klat3mk/remake/main/fe%20kill%20for%20any%20game'))()
         _G.killv1 = true
         end
+    else 
+        print("executed")
+    end
     end
     end)
 
 
     spawn(function ()
         function killv2()
-            if _G.killv2 == false then
+        if game:GetService("CoreGui"):FindFirstChild("IvAdmin CommandBar")  then
+        print("executed")
+    else 
+        if _G.killv2 == false then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin%202.lua'))()
             _G.killv2 = true
-            end
         end
+    end
+    end
     end)
-
 
 
     spawn(function ()
@@ -776,12 +849,25 @@
        Callback = function(amount)
         GUI:Notify({
             Title = "Note",
-            Content = "Duping "..amount,
+            Content = "Duping "..amount.." Boombox's",
             Duration = 5.2,
         })
         Dupe(amount)
        end,
    })
+
+    local Button = home:CreateButton({
+    Name = "Remove Boombox Mesh",
+    Callback = function()
+        Mesh()
+        GUI:Notify({
+            Title= "",
+            Content = "Removed..",
+            Duration = 5.2,
+        })
+    end,
+   })
+   
 
    local Button = home:CreateButton({
     Name = "Remove the Dance Tools",
@@ -882,7 +968,7 @@
         end,
     })
 
-    local LP =  UI:CreateTab("LocalPlayer")
+    local LP =  UI:CreateTab("LocalPlayer", 11588880988)
 
 
     local Section = LP:CreateSection("aka localplayer")
@@ -958,7 +1044,6 @@
         end
     })
 
-    local Section = fescripts:CreateSection("most of the script's is not working we will fix that very soon")
     local Section = fescripts:CreateSection("if you crashed just reset?, or rejoin in the misc tab")
 
     local Button = fescripts:CreateButton({
@@ -2063,7 +2148,7 @@
         end,
     })
 
-    local misc = UI:CreateTab("Misc")
+    local misc = UI:CreateTab("Misc", "rbxassetid://11588825883")
 
     -- [ misc ] --
 
@@ -2091,30 +2176,49 @@
             end
         end,
     })
-
+    _G.gt = false
     local Toggle = misc:CreateToggle({
         Name = "grabtools",
         CurrentValue = false,
         Flag = "gt", 
         Callback = function(value)
             if value == true then 
+                _G.gt = true
                 GUI:Notify({
                      Title= "Toggle",
                     Content = "Grabtools is Active",
                     Duration = 5.2,
                 })
-                grabtools()
+                while _G.gt == true do
+                    wait(0.1)
+                    grabtools()
+                end
             else 
                 GUI:Notify({
                      Title= "Toggle",
                     Content = "Grabtools is Disabled",
                     Duration = 5.2,
                 })
+                _G.gt = false
                 ungrabtools()
             end
         end,
     })
 
+    local Button = misc:CreateButton({
+        Name = "Headless (It's fe btw)",
+        Callback = function()
+            game:GetService("ReplicatedStorage").HDAdminClient.Signals.RequestCommand:InvokeServer(";Name me Klat on top!")
+            wait()
+            speaker.Character["Klat on top!"]:Destroy()
+            speaker.Character.Head.face:Destroy()
+            GUI:Notify({
+                Title = "Note",
+                Content = "Done.!",
+                Duration = 6.2,
+            })
+        end,
+    })
 
     local Button = misc:CreateButton({
         Name = "Auto Rejoin",
@@ -2124,6 +2228,16 @@
                 Content = "this cannot be undone",
                 Duration = 6.5,
                 Actions = { 
+                    Button2 = {
+                        Name = "no im not",
+                        Callback = function()
+                            GUI:Notify({
+                                Title = "",
+                                Content = "alright..",
+                                Duration = 2,
+                            })
+                        end
+                    },
                     Button1 = {
                         Name = "yes im sure",
                         Callback = function()
@@ -2151,16 +2265,6 @@
                             })
                         end
                     },
-                    Button2 = {
-                        Name = "no im not",
-                        Callback = function()
-                            GUI:Notify({
-                                Title = "",
-                                Content = "alright..",
-                                Duration = 2,
-                            })
-                        end
-                    },
                 },
             })
         end,
@@ -2178,50 +2282,99 @@
             game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
         end,
     })
+
+
+
     local credits = UI:CreateTab("Credits")
 
     local Section = credits:CreateSection("Credits")
 
     local Label = credits:CreateLabel("This Hub Was Made by Khlat and Makram Dacca")
 
-    local Label = credits:CreateLabel("Discord for Khlat : khlat#0089 ")
+    local Label = credits:CreateLabel("Discord for Khlat : kool_ere#0089 ")
+    local Button = credits:CreateButton({
+        Name = "Copy's Khlat's Discord",
+        Callback = function()
+            GUI:Notify({
+                Title = "Note",
+                Content = "Succesfull",
+                Duration = 4,
+            })
+            wait(0.2)
+            setclipboard(tostring("kool_ere#0089"))
+        end,
+    })
 
 
     local Label = credits:CreateLabel("Roblox Account for Khlat : dream0_77777777777")
 
     local Label = credits:CreateLabel("Discord for Makram : DARK16#7037")
+    local Button = credits:CreateButton({
+        Name = "Copy's Mkrm's Discord",
+        Callback = function()
+            GUI:Notify({
+                Title = "Note",
+                Content = "Succesfull",
+                Duration = 4,
+            })
+            wait(0.2)
+            setclipboard(tostring("DARK16#7037"))
+        end,
+    })
 
     local Label = credits:CreateLabel("Check Out Mkrms Channel : Mkrm Dacca")
+    local Button = credits:CreateButton({
+        Name = "Copy's Mkrm's Channel's Link",
+        Callback = function()
+            GUI:Notify({
+                Title = "Sub and like!!",
+                Content = "Succesfull",
+                Duration = 4,
+            })
+            wait(0.2)
+            setclipboard(tostring("https://www.youtube.com/@mkrmdacca"))
+        end,
+    })
 
     local Label = credits:CreateLabel("Roblox Account for Makram : makram12345")
 GUI:LoadConfiguration()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Proxylol/OtherScripts/main/AntiAfk.lua'),true))()
+while wait(0.6) do
+    for i,v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+        if v.Name == "AntiAfk" and v.ClassName == "ScreenGui" then
+            v.Enabled = false
+        end
+    end
+end
 while true do 
-        if Workspace.Baseplate553 then
-    Workspace.Baseplate553.Color = Color3.new(255/255,0/255,0/255)
+for i,v in pairs(game:GetDescendants()) do
+    if v.Name == "Baseplate553" then
+    v.Color = Color3.new(255/255,0/255,0/255)
     for i = 0,255,10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(255/255,i/255,0/255)
+    v.Color = Color3.new(255/255,i/255,0/255)
     end
     for i = 255,0,-10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(i/255,255/255,0/255)
+    v.Color = Color3.new(i/255,255/255,0/255)
     end
     for i = 0,255,10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(0/255,255/255,i/255)
+    v.Color = Color3.new(0/255,255/255,i/255)
     end
     for i = 255,0,-10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(0/255,i/255,255/255)
+    v.Color = Color3.new(0/255,i/255,255/255)
     end
     for i = 0,255,10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(i/255,0/255,255/255)
+    v.Color = Color3.new(i/255,0/255,255/255)
     end
     for i = 255,0,-10 do
     wait()
-    Workspace.Baseplate553.Color = Color3.new(255/255,0/255,i/255)
+    v.Color = Color3.new(255/255,0/255,i/255)
     end
     end
+end
 end
 end
